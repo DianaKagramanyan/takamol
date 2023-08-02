@@ -1,9 +1,12 @@
 import React from 'react';
+import Cards from "./Cards";
+import Platform from "./Platform";
 
 const MainContent = () => {
   return (
     <div>
-   Main content
+      <Platform/>
+      <Cards/>
     </div>
   );
 };

@@ -131,9 +131,8 @@ function ResponsiveAppBar() {
             <Button variant="outlined"  color="success"  >Sign in</Button>
           </div>
           <div className='button-cont'>
-            <Button variant="contained" color="success" >Create an account</Button>
+            <Button variant="contained" color="success" >Create account</Button>
           </div>
-
         </Toolbar>
       </Container>
     </AppBar>
