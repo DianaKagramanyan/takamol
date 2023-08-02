@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #F5F7F8;
+}
+
+.search {
+    color: #3C8084;
+    cursor: pointer;
+}
+
+.button-out {
+    cursor: pointer;
+}
+
