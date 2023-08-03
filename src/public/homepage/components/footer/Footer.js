@@ -3,7 +3,7 @@ import {logo, takamol} from "../../../../img";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import {Link, NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -45,9 +45,15 @@ const Footer = () => {
         <div className="section1">All rights reserved to Rehabilitation and Social Guidance</div>
         <div className="section1">Platform | Qualification 2023</div>
         <div className="icon-three">
-          <InstagramIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
-          <YouTubeIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
-          <TwitterIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
+          <Link to="https://www.instagram.com/hrsd_sa/?igshid=YmMyMTA2M2Y%3D">
+            <InstagramIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
+          </Link>
+          <Link to="https://www.youtube.com/c/HRSDsa">
+            <YouTubeIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
+          </Link>
+          <Link to="https://twitter.com/hrsd_sa?s=21&t=oVEYi49T6hc944BpCiHpVQ">
+            <TwitterIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
+          </Link>
         </div>
       </div>
 

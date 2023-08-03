@@ -6,6 +6,7 @@ import Services from "./public/homepage/pages/Services";
 import Faq from "./public/homepage/pages/Faq";
 import MainContent from "./public/homepage/components/home/MainContent";
 import './public/homepage/styles/header.css'
+import ServiceDescription from "./public/homepage/pages/ServiceDescription";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="About Platform" element={<About/>}/>
         <Route path="Our Services" element={<Services/>}/>
         <Route path="Help" element={<Faq/>}/>
+        <Route path="/serviceDescription" element={<ServiceDescription/>}/>
       </Routes>
       {/*<MainContent/>*/}
       <Footer/>

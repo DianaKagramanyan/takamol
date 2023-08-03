@@ -25,8 +25,10 @@ const Center = () => {
               </div>
             </CardContent>
             <CardActions className="button-go">
-              <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to
-                services</Button>
+              <Link to="/serviceDescription" style={{textDecoration: 'none'}}>
+                <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to
+                  services</Button>
+              </Link>
             </CardActions>
           </Card>
         </div>
@@ -40,8 +42,10 @@ const Center = () => {
               </Typography>
             </CardContent>
             <CardActions className="button-go">
-              <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to
-                services</Button>
+              <Link to="/serviceDescription" style={{textDecoration: 'none'}}>
+                <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to
+                  services</Button>
+              </Link>
             </CardActions>
           </Card>
         </div>
