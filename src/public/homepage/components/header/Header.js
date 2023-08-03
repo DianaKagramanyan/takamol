@@ -27,9 +27,6 @@ function ResponsiveAppBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  }
 
   return (
     <AppBar position="static">
@@ -50,7 +47,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            <img onClick={handleSubmit} src={logo} alt="logoImage"/>
+            <img src={logo} alt="logoImage"/>
           </Typography>
 
 

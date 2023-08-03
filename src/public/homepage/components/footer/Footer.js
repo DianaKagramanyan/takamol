@@ -3,6 +3,7 @@ import {logo, takamol} from "../../../../img";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import {Link, NavLink} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,10 +16,18 @@ const Footer = () => {
 
       <div className="section">
         <div className="section1">Important links</div>
-        <div className="section1">About platform</div>
-        <div className="section1">Our services</div>
-        <div className="section1">Help</div>
-        <div className="section1">Terms and Conditions</div>
+        <Link to="/About Platform" style={{textDecoration: 'none'}}>
+          <div className="section1">About platform</div>
+        </Link>
+        <Link to="/Our Services" style={{textDecoration: 'none'}}>
+          <div className="section1">Our services</div>
+        </Link>
+        <Link to="/Help" style={{textDecoration: 'none'}}>
+          <div className="section1">Help</div>
+        </Link>
+        <Link to="/" style={{textDecoration: 'none'}}>
+          <div className="section1">Terms and Conditions</div>
+        </Link>
       </div>
 
       <div className="section">
@@ -36,9 +45,9 @@ const Footer = () => {
         <div className="section1">All rights reserved to Rehabilitation and Social Guidance</div>
         <div className="section1">Platform | Qualification 2023</div>
         <div className="icon-three">
-          <InstagramIcon className="icon-three" sx={{color:"#3C8084", fontSize: 30}}/>
-          <YouTubeIcon className="icon-three" sx={{color:"#3C8084", fontSize: 30}} />
-          <TwitterIcon className="icon-three" sx={{color:"#3C8084", fontSize: 30}} />
+          <InstagramIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
+          <YouTubeIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
+          <TwitterIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
         </div>
       </div>
 

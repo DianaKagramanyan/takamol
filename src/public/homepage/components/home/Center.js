@@ -6,6 +6,7 @@ import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
 import ReceiptLongOutlinedIcon from '@mui/icons-material/ReceiptLongOutlined';
+import {Link} from "react-router-dom";
 
 const Center = () => {
   return (
@@ -24,7 +25,8 @@ const Center = () => {
               </div>
             </CardContent>
             <CardActions className="button-go">
-              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined"  size="small">Go to services</Button>
+              <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to
+                services</Button>
             </CardActions>
           </Card>
         </div>
@@ -38,7 +40,8 @@ const Center = () => {
               </Typography>
             </CardContent>
             <CardActions className="button-go">
-              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined"  size="small">Go to services</Button>
+              <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to
+                services</Button>
             </CardActions>
           </Card>
         </div>
@@ -56,7 +59,10 @@ const Center = () => {
 
         <div className='button'>
           <div className='button-out'>
-            <Button sx={{color:"white", backgroundColor: "rgb(60, 128, 132)"}} variant="contained">view all services</Button>
+            <Link to="/Our Services" style={{textDecoration: 'none'}}>
+              <Button className='button-cont' sx={{color: "white", backgroundColor: "rgb(60, 128, 132)"}}
+                      variant="contained">view all services</Button>
+            </Link>
           </div>
         </div>
       </div>

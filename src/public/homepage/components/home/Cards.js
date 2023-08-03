@@ -6,6 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import {card1, card2, card3} from "../../../../img";
+import {Link} from "react-router-dom";
 
 const bull = (
   <Box
@@ -41,7 +42,10 @@ export default function Cards() {
               </Typography>
             </CardContent>
             <CardActions className="button-go">
-              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to services</Button>
+              <Link to="/Our Services" style={{textDecoration: 'none'}}>
+              <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to
+                services</Button>
+              </Link>
             </CardActions>
           </Card>
         </div>
@@ -65,7 +69,10 @@ export default function Cards() {
               </Typography>
             </CardContent>
             <CardActions className="button-go">
-              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to services</Button>
+              <Link to="/Our Services" style={{textDecoration: 'none'}}>
+                <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to
+                  services</Button>
+              </Link>
             </CardActions>
           </Card>
         </div>
@@ -84,7 +91,10 @@ export default function Cards() {
               </Typography>
             </CardContent>
             <CardActions className="button-go">
-              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to services</Button>
+              <Link to="/Our Services" style={{textDecoration: 'none'}}>
+                <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to
+                  services</Button>
+              </Link>
             </CardActions>
           </Card>
         </div>
