@@ -2,6 +2,17 @@
     margin: 0;
     padding: 0;
 }
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
 
 .header {
     /*background-color: #F5F7F8;*/
@@ -15,5 +26,80 @@
 
 .button-out {
     cursor: pointer;
+}
+
+
+/*PLATFORM*/
+
+.platform {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(245, 247, 248);
+    height: max-content;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    margin-right: -10%;
+    overflow: hidden;
+    border-radius: 0px 0px 50% 50%;
+}
+
+.image {
+    margin-left: 5%;
+    padding: 20px;
+    margin-right: 15%;
+}
+.img {
+    width: 150%;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10%;
+
+
+}
+.header1 {
+    width: 580px;
+    font-size: 32px;
+    font-weight: 900;
+    font-stretch: expanded;
+    line-height: 1.58;
+    letter-spacing: normal;
+    text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
+    color: rgb(20, 65, 90);
+}
+.description {
+    width: 88%;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1.6;
+    letter-spacing: normal;
+}
+
+.button {
+    display: flex;
+    padding-top: 48px;
+    padding-right: 48px;
+    margin-left: -150px;
+}
+.button-out {
+    padding: 10px;
+    margin-left: 10px;
+}
+.button-cont {
+    padding: 10px;
+}
+
+/*CARDS*/
+
+.card {
+    display: flex;
+    padding-bottom: 24px;
+    margin: 20px;
 }
 

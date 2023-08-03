@@ -128,7 +128,7 @@ function ResponsiveAppBar() {
             <SearchOutlinedIcon fontSize="large"/>
           </div>
           <div className='button-out'>
-            <Button variant="outlined"  color="success"  >Sign in</Button>
+            <Button variant="outlined"  color="success" >Sign in</Button>
           </div>
           <div className='button-cont'>
             <Button variant="contained" color="success" >Create account</Button>

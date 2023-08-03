@@ -1,4 +1,4 @@
-import '../../styles/platform.css';
+import '../../styles/header.css';
 import React from 'react';
 import {image1} from "../../../../img";
 import Button from "@mui/material/Button";
@@ -7,18 +7,19 @@ const Platform = () => {
   return (
     <div className="platform">
       <div className="image">
-        <img src={image1} alt="image1"/>
+        <img className="img" src={image1} alt="image1"/>
       </div>
 
-      <div>
-        <h1>
+      <div className="detail">
+        <h1 className="header1">
           Social rehabilitation and guidance platform
         </h1>
-        <p>
+        <p className="description">
           The platform serves the groups most dear to our hearts, including people
           with disabilities, the elderly, and orphans. It also helps our partners
           from rehabilitation centers to provide services that meet their needs
         </p>
+
         <div className='button'>
           <div className='button-out'>
             <Button variant="outlined" color="success">Browse our services</Button>
