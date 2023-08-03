@@ -4,10 +4,8 @@ import {Route, Routes} from "react-router-dom";
 import About from "./public/homepage/pages/About";
 import Services from "./public/homepage/pages/Services";
 import Faq from "./public/homepage/pages/Faq";
-import Home from "./public/homepage/pages/Home";
 import MainContent from "./public/homepage/components/home/MainContent";
 import './public/homepage/styles/header.css'
-import Navbar from "./public/homepage/components/header/Navbar";
 
 
 function App() {
