@@ -5,6 +5,7 @@ import card2 from './card2.png';
 import card3 from './card3.png';
 import backimage from './backimage.png';
 import imagelast from './imagelast.png';
+import takamol from './takamol.png';
 
 export {
   logo,
@@ -13,5 +14,6 @@ export {
   card2,
   card3,
   backimage,
-  imagelast
+  imagelast,
+  takamol
 }
