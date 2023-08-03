@@ -41,7 +41,7 @@ export default function Cards() {
               </Typography>
             </CardContent>
             <CardActions className="button-go">
-              <Button variant="outlined"  color="success" size="small">Go to services</Button>
+              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to services</Button>
             </CardActions>
           </Card>
         </div>
@@ -65,7 +65,7 @@ export default function Cards() {
               </Typography>
             </CardContent>
             <CardActions className="button-go">
-              <Button variant="outlined"  color="success" size="small">Go to services</Button>
+              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to services</Button>
             </CardActions>
           </Card>
         </div>
@@ -84,7 +84,7 @@ export default function Cards() {
               </Typography>
             </CardContent>
             <CardActions className="button-go">
-              <Button variant="outlined"  color="success" size="small">Go to services</Button>
+              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small">Go to services</Button>
             </CardActions>
           </Card>
         </div>

@@ -24,7 +24,7 @@ const Center = () => {
               </div>
             </CardContent>
             <CardActions className="button-go">
-              <Button variant="outlined" color="success" size="small">Go to services</Button>
+              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined"  size="small">Go to services</Button>
             </CardActions>
           </Card>
         </div>
@@ -38,7 +38,7 @@ const Center = () => {
               </Typography>
             </CardContent>
             <CardActions className="button-go">
-              <Button variant="outlined" color="success" size="small">Go to services</Button>
+              <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined"  size="small">Go to services</Button>
             </CardActions>
           </Card>
         </div>
@@ -55,8 +55,8 @@ const Center = () => {
         </p>
 
         <div className='button'>
-          <div className='button-cont'>
-            <Button variant="contained" color="success">view all services</Button>
+          <div className='button-out'>
+            <Button sx={{color:"white", backgroundColor: "rgb(60, 128, 132)"}} variant="contained">view all services</Button>
           </div>
         </div>
       </div>

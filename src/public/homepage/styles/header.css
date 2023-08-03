@@ -19,6 +19,7 @@ html {
 .header {
     /*background-color: #F5F7F8;*/
     background-color: white;
+    position: fixed;
     /*width: 100%;*/
 }
 
@@ -42,7 +43,7 @@ html {
     height: max-content;
     width: 100%;
     padding-bottom: 5%;
-    padding-top: 2%;
+    padding-top: 5%;
     margin-right: -10%;
     overflow: hidden;
     border-radius: 0px 0px 50% 50%;
@@ -97,10 +98,14 @@ html {
 .button-out {
     padding: 10px;
     margin-left: 10px;
+    border: #3C8084;
 }
 
 .button-cont {
     padding: 10px;
+}
+.button-cont:hover {
+   background: #3C8084 !important;
 }
 
 /*CARDS*/

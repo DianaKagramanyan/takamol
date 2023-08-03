@@ -22,10 +22,10 @@ const Platform = () => {
 
         <div className='button'>
           <div className='button-out'>
-            <Button variant="outlined" color="success">Browse our services</Button>
+            <Button className='button-out' sx={{color:" #3C8084", border: ".5px solid #3C8084"}} variant="outlined" >Browse our services</Button>
           </div>
-          <div className='button-cont'>
-            <Button variant="contained" color="success">Create account</Button>
+          <div className='button-out'>
+            <Button className='button-cont' sx={{color:"white", backgroundColor: "rgb(60, 128, 132)"}} variant="contained" >Create account</Button>
           </div>
         </div>
       </div>

@@ -36,9 +36,9 @@ const Footer = () => {
         <div className="section1">All rights reserved to Rehabilitation and Social Guidance</div>
         <div className="section1">Platform | Qualification 2023</div>
         <div className="icon-three">
-          <InstagramIcon className="icon-three" color="success"  sx={{ fontSize: 30 }} />
-          <YouTubeIcon className="icon-three" color="success" sx={{ fontSize: 30 }}/>
-          <TwitterIcon className="icon-three" color="success" sx={{ fontSize: 30 }}/>
+          <InstagramIcon className="icon-three" sx={{color:"#3C8084", fontSize: 30}}/>
+          <YouTubeIcon className="icon-three" sx={{color:"#3C8084", fontSize: 30}} />
+          <TwitterIcon className="icon-three" sx={{color:"#3C8084", fontSize: 30}} />
         </div>
       </div>
 

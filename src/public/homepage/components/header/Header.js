@@ -128,11 +128,11 @@ function ResponsiveAppBar() {
             <SearchOutlinedIcon fontSize="large"/>
           </div>
           <div className='button-out'>
-            <Button variant="outlined"  color="success" >Sign in</Button>
+            <Button sx={{color:" #3C8084", border: ".5px solid #3C8084"}} className='button-out' variant="outlined" >Sign in</Button>
           </div>
-          <div className='button-cont'>
-            <Button className='button-cont' variant="contained" color="success" >Create account</Button>
-          </div>
+          <div className='button-out'>
+            <Button sx={{color:"white", backgroundColor: "rgb(60, 128, 132)"}} className='button-cont' variant="contained">Create account</Button>
+          </div>›
         </Toolbar>
       </Container>
     </AppBar>
