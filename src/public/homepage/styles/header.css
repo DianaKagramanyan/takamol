@@ -17,6 +17,7 @@ html {
 .header {
     /*background-color: #F5F7F8;*/
     background-color: white;
+    /*width: 100%;*/
 }
 
 .search {
@@ -117,24 +118,14 @@ html {
     display: flex;
     justify-content: center;
     width: 100%;
-    /*margin-left: -8px;*/
-    /*margin-top: 70px;*/
-    /*margin-bottom: 70px;*/
-
 }
 
 .card {
-
-    /*height: 50%;*/
-    /*width: 30%;*/
-    /*margin: 10px;*/
-    /*padding: 24px;*/
     height: 100%;
     width: 26%;
-    /*margin: 0px auto;*/
     padding: 12px;
-
 }
+
 .content {
     display: flex;
     flex-direction: column;
@@ -144,16 +135,6 @@ html {
     width: 180px;
 }
 .name {
-    /*margin: 0px 0px 0.35em;*/
-    /*font-family: Roboto, Helvetica, Arial, sans-serif;*/
-    /*line-height: 1.235;*/
-    /*letter-spacing: -0.06px;*/
-    /*text-align: center;*/
-    /*color: rgb(23, 43, 77);*/
-    /*padding-bottom: 16px;*/
-    /*font-weight: 700;*/
-    /*padding-top: 0px;*/
-    /*font-size: 20px;*/
 }
 .text {
     text-align: justify;
@@ -161,4 +142,64 @@ html {
 }
 .button-go {
     margin-bottom: 15px;
+}
+
+/*CENTER*/
+
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-image: url(../../../img/backimage.png);
+    object-fit: cover;
+    height: 507px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-small {
+    position: relative;
+    height: 270px;
+    width: 100%;
+    padding: 24px;
+    margin-left: 20px;
+
+}
+
+.icon {
+    color: #147e82;
+    font-style: normal;
+}
+.name1 {
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 20px;
+    height: 60px;
+}
+.detail2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-right: 10%;*/
+}
+.header2 {
+    width: 580px;
+    font-size: 28px;
+    font-weight: 100;
+    font-stretch: expanded;
+    line-height: 1.58;
+    letter-spacing: normal;
+    color: white;
+}
+.description2 {
+    width: 88%;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 17px;
+    color:white;
+    line-height: 1.6;
+    letter-spacing: normal;
 }
