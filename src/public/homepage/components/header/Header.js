@@ -19,8 +19,7 @@ import {useState} from "react";
 const pages = ['Main', 'Our Services', 'About Platform', 'Help'];
 
 function ResponsiveAppBar() {
-  //change nav color while scrolling
-
+  //change nav color while scrolling:
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 10) {
