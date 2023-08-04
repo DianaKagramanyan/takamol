@@ -36,8 +36,6 @@ const Platform = () => {
           </div>
         </div>
       </div>
-
-
     </div>
   );
 };
