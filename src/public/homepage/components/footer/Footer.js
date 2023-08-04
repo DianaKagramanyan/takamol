@@ -45,13 +45,15 @@ const Footer = () => {
         <div className="section1">All rights reserved to Rehabilitation and Social Guidance</div>
         <div className="section1">Platform | Qualification 2023</div>
         <div className="icon-three">
-          <Link to="https://www.instagram.com/hrsd_sa/?igshid=YmMyMTA2M2Y%3D">
+          <Link to="https://www.instagram.com/hrsd_sa/?igshid=YmMyMTA2M2Y%3D" target="_blank">
             <InstagramIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
           </Link>
-          <Link to="https://www.youtube.com/c/HRSDsa">
+          <Link to="https://www.youtube.com/c/HRSDsa" target="_blank">
+            {/*<a href="https://www.youtube.com/c/HRSDsa" target="_blank">*/}
             <YouTubeIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
+            {/*</a>*/}
           </Link>
-          <Link to="https://twitter.com/hrsd_sa?s=21&t=oVEYi49T6hc944BpCiHpVQ">
+          <Link to="https://twitter.com/hrsd_sa?s=21&t=oVEYi49T6hc944BpCiHpVQ" target="_blank">
             <TwitterIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
           </Link>
         </div>
