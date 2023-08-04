@@ -29,8 +29,10 @@ const Platform = () => {
             </Link>
           </div>
           <div className='button-out'>
-            <Button className='button-cont' sx={{color: "white", backgroundColor: "rgb(60, 128, 132)"}}
-                    variant="contained">Create account</Button>
+            <Link to="/register" style={{textDecoration: 'none'}}>
+              <Button className='button-cont' sx={{color: "white", backgroundColor: "rgb(60, 128, 132)"}}
+                      variant="contained">Create account</Button>
+            </Link>
           </div>
         </div>
       </div>

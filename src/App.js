@@ -7,6 +7,8 @@ import Faq from "./public/homepage/pages/Faq";
 import MainContent from "./public/homepage/components/home/MainContent";
 import './public/homepage/styles/header.css'
 import ServiceDescription from "./public/homepage/pages/ServiceDescription";
+import Login from "./public/homepage/pages/Login";
+import Registration from "./public/homepage/pages/Registration";
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="Our Services" element={<Services/>}/>
         <Route path="Help" element={<Faq/>}/>
         <Route path="/serviceDescription" element={<ServiceDescription/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/register" element={<Registration/>}/>
       </Routes>
       {/*<MainContent/>*/}
       <Footer/>
