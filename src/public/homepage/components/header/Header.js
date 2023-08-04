@@ -14,10 +14,24 @@ import AdbIcon from '@mui/icons-material/Adb';
 import {Link} from 'react-router-dom';
 import {logo} from "../../../../img";
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import {useState} from "react";
 
 const pages = ['Main', 'Our Services', 'About Platform', 'Help'];
 
 function ResponsiveAppBar() {
+  //change nav color while scrolling
+
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 10) {
+      setColor(true)
+    } else {
+      setColor(false)
+    }
+  }
+  window.addEventListener("scroll", changeColor)
+
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -29,7 +43,7 @@ function ResponsiveAppBar() {
   };
 
   return (<AppBar position="static">
-    <Container className="header" maxWidth="xl">
+    <Container className={color ? "header header-bg" : "header"} maxWidth="xl">
       <Toolbar disableGutters>
         <Typography
           variant="h6"

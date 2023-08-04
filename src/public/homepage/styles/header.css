@@ -18,9 +18,12 @@ html {
 
 .header {
     /*background-color: #F5F7F8;*/
-    background-color: white;
     position: fixed;
+    z-index: 99;
     /*width: 100%;*/
+}
+.header-bg {
+    background-color: white;
 }
 
 .search {
