@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 *,
 *::before,
 *::after {
@@ -14,7 +13,6 @@ html {
 }
 
 /*HEADER*/
-
 
 .header {
     /*background-color: #F5F7F8;*/
@@ -37,7 +35,6 @@ html {
 
 
 /*PLATFORM*/
-
 .platform {
     display: flex;
     align-items: center;
@@ -67,8 +64,6 @@ html {
     flex-direction: column;
     align-items: center;
     margin-right: 10%;
-
-
 }
 
 .header1 {
@@ -112,7 +107,6 @@ html {
 }
 
 /*CARDS*/
-
 .header-benef {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     color: rgba(20, 65, 90, 0.87);
@@ -164,8 +158,6 @@ html {
 }
 
 /*CENTER*/
-
-
 .center {
     display: flex;
     align-items: center;
