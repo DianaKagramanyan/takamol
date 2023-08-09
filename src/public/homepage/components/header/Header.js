@@ -42,7 +42,7 @@ function ResponsiveAppBar() {
   };
 
   return (<AppBar position="static">
-    <Container className={color ? "header header-bg" : "header"} maxWidth="xl">
+    <Container className={color ? "header header-bg" : "header"} maxWidth="100%">
       <Toolbar disableGutters>
         <Typography
           variant="h6"
