@@ -101,24 +101,6 @@ function ResponsiveAppBar() {
           </Menu>
         </Box>
         <AdbIcon sx={{display: {xs: 'flex', md: 'none'}, mr: 1}}/>
-        <Typography
-          variant="h5"
-          noWrap
-          component="a"
-          href=""
-          sx={{
-            mr: 2,
-            display: {xs: 'flex', md: 'none'},
-            flexGrow: 1,
-            fontFamily: 'monospace',
-            fontWeight: 500,
-            letterSpacing: '.3rem',
-            color: 'inherit',
-            textDecoration: 'none',
-          }}
-        >
-          LOGO
-        </Typography>
         <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
           {pages.map((page) => (<Button
             key={page}
@@ -145,7 +127,6 @@ function ResponsiveAppBar() {
                     variant="contained">Create account</Button>
           </Link>
         </div>
-        ›
       </Toolbar>
     </Container>
   </AppBar>);
