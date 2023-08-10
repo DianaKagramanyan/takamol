@@ -66,7 +66,7 @@ body {
 .detail {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-right: 10%;
 }
 
@@ -79,6 +79,7 @@ body {
     letter-spacing: normal;
     text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
     color: rgb(20, 65, 90);
+    margin-bottom: 30px;
 }
 
 .description {
@@ -94,13 +95,12 @@ body {
     display: flex;
     padding-top: 48px;
     padding-right: 48px;
-    margin-left: -150px;
 }
 
 .button-out {
-    padding: 10px;
-    margin-left: 10px;
-    border: #3C8084;
+    /*padding: 10px;*/
+    margin-right: 30px;
+    /*border: #3C8084;*/
 }
 
 .button-cont {
@@ -175,12 +175,19 @@ body {
 }
 
 .card-small {
+    box-sizing: border-box;
     position: relative;
     height: 270px;
     width: 100%;
     padding: 24px;
     margin-left: 20px;
-
+    /*box-shadow: 2px 4px 12px rgba(11, 68, 70, 0.25);*/
+    /*box-shadow: 2px 40px 30px red;*/
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .icon {
@@ -199,7 +206,8 @@ body {
 .detail2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 20px;
 }
 
 .header2 {
@@ -221,6 +229,7 @@ body {
     color: white;
     line-height: 1.6;
     letter-spacing: normal;
+    margin-bottom: 30px;
 }
 
 /*GOAL*/

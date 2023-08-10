@@ -14,7 +14,7 @@ const Center = () => {
       <div className="card-main">
         <div className="card-small">
           <Card className="content" sx={{minWidth: 275}}>
-            <CardContent className="content">
+            <CardContent className="cont">
               <div className="icon">
                 <ReceiptLongOutlinedIcon className="icon" sx={{fontSize: 80}}/>
               </div>
@@ -35,7 +35,7 @@ const Center = () => {
 
         <div className="card-small">
           <Card className="content" sx={{minWidth: 275}}>
-            <CardContent className="content">
+            <CardContent className="cont">
               <InsertDriveFileOutlinedIcon className="icon" sx={{fontSize: 80}}/>
               <Typography className="name1">
                 Issuing an initial approval for a civil center
@@ -61,16 +61,12 @@ const Center = () => {
           centers for the beneficiaries and owners of the centers
         </p>
 
-        <div className='button'>
-          <div className='button-out'>
-            <Link to="/Our Services" style={{textDecoration: 'none'}}>
-              <Button className='button-cont' sx={{color: "white", backgroundColor: "rgb(60, 128, 132)"}}
-                      variant="contained">view all services</Button>
-            </Link>
-          </div>
-        </div>
-      </div>
+        <Link to="/Our Services" style={{textDecoration: 'none'}}>
+          <Button sx={{color: "white", backgroundColor: "rgb(60, 128, 132)"}}
+                  variant="contained">view all services</Button>
+        </Link>
 
+      </div>
     </div>
   );
 };
