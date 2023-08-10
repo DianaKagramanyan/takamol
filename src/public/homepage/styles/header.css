@@ -173,22 +173,38 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.card-small {
-    box-sizing: border-box;
-    position: relative;
-    height: 270px;
-    width: 100%;
-    padding: 24px;
-    margin-left: 20px;
-    /*box-shadow: 2px 4px 12px rgba(11, 68, 70, 0.25);*/
+.card-main-cor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-small-cor{
+    margin: 50px;
     /*box-shadow: 2px 40px 30px red;*/
+    box-shadow: 2px 4px 12px rgba(11, 68, 70, 0.25);
+}
+.content-cor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .cont {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/*.card-small {*/
+/*    box-sizing: border-box;*/
+/*    position: relative;*/
+/*    height: 270px;*/
+/*    width: 100%;*/
+/*    padding: 24px;*/
+/*    margin-left: 20px;*/
+/*    box-shadow: 2px 4px 12px rgba(11, 68, 70, 0.25);*/
+    /*box-shadow: 2px 40px 30px red;*/
+/*}*/
+
 
 .icon {
     color: #147e82;

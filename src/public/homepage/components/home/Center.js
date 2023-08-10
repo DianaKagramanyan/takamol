@@ -11,18 +11,14 @@ import {Link} from "react-router-dom";
 const Center = () => {
   return (
     <div className="center">
-      <div className="card-main">
-        <div className="card-small">
-          <Card className="content" sx={{minWidth: 275}}>
+      <div className="card-main-cor">
+        <div className="card-small-cor">
+          <Card className="content-cor" sx={{minWidth: 275}}>
             <CardContent className="cont">
-              <div className="icon">
-                <ReceiptLongOutlinedIcon className="icon" sx={{fontSize: 80}}/>
-              </div>
-              <div>
-                <Typography className="name1">
-                  Issuance of a license
-                </Typography>
-              </div>
+              <ReceiptLongOutlinedIcon className="icon" sx={{fontSize: 80}}/>
+              <Typography className="name1">
+                Issuance of a license
+              </Typography>
             </CardContent>
             <CardActions className="button-go">
               <Link to="/serviceDescription" style={{textDecoration: 'none'}}>
@@ -33,12 +29,12 @@ const Center = () => {
           </Card>
         </div>
 
-        <div className="card-small">
-          <Card className="content" sx={{minWidth: 275}}>
+        <div className="card-small-cor">
+          <Card className="content-cor" sx={{minWidth: 275}}>
             <CardContent className="cont">
               <InsertDriveFileOutlinedIcon className="icon" sx={{fontSize: 80}}/>
               <Typography className="name1">
-                Issuing an initial approval for a civil center
+                Issuing an initial approval
               </Typography>
             </CardContent>
             <CardActions className="button-go">
