@@ -1,7 +1,8 @@
 import React from 'react';
-import {aboutAgency, aboutPlatform, agencyGoals, agencySoftware} from "../../../img";
+import {aboutAgency, aboutPlatform, agencyGoals, agencySoftware} from "../../img";
 
-const About = () => {
+
+const AboutPlatform = () => {
   return (
     <div>
 
@@ -134,4 +135,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPlatform;

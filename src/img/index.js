@@ -10,6 +10,7 @@ import aboutPlatform from './aboutPlatform.png';
 import aboutAgency from './aboutAgency.png';
 import agencyGoals from './agencyGoals.png';
 import agencySoftware from './agencySoftware.png';
+import help from './help.png';
 
 export {
   logo,
@@ -23,5 +24,6 @@ export {
   aboutPlatform,
   aboutAgency,
   agencyGoals,
-  agencySoftware
+  agencySoftware,
+  help
 }

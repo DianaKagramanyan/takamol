@@ -1,14 +1,15 @@
 import Header from "./public/homepage/components/header/Header";
 import Footer from "./public/homepage/components/footer/Footer";
 import {Route, Routes} from "react-router-dom";
-import About from "./public/homepage/pages/About";
-import Services from "./public/homepage/pages/Services";
-import Faq from "./public/homepage/pages/Faq";
-import MainContent from "./public/homepage/components/home/MainContent";
-import ServiceDescription from "./public/homepage/pages/ServiceDescription";
-import Login from "./public/homepage/pages/Login";
-import Registration from "./public/homepage/pages/Registration";
+import Services from "./public/pages/Services";
+import Faq from "./public/pages/Faq";
+import ServiceDescription from "./public/pages/ServiceDescription";
+import Login from "./public/pages/Login";
+import Registration from "./public/pages/Registration";
 import './public/styles/header.css';
+import Home from "./public/pages/Home";
+import About from "./public/pages/About";
+
 
 
 function App() {
@@ -16,9 +17,9 @@ function App() {
     <div>
       <Header className="header"/>
       <Routes>
-        <Route path="/" element={<MainContent/>}/>
-        <Route path="Main" element={<MainContent/>}/>
-        <Route path="About Platform" element={<About/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="Main" element={<Home/>}/>
+        <Route path="About" element={<About/>}/>
         <Route path="Our Services" element={<Services/>}/>
         <Route path="Help" element={<Faq/>}/>
         <Route path="/serviceDescription" element={<ServiceDescription/>}/>

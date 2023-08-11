@@ -16,7 +16,7 @@ import {logo} from "../../../../img";
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import {useState} from "react";
 
-const pages = ['Main', 'Our Services', 'About Platform', 'Help'];
+const pages = ['Main', 'Our Services', 'About', 'Help'];
 
 function ResponsiveAppBar() {
   //change nav color while scrolling:

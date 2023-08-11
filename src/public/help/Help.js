@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Faq = () => {
+const Help = () => {
   return (
     <div>
-      Help...
+      koko
     </div>
   );
 };
 
-export default Faq;
+export default Help;
