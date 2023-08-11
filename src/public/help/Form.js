@@ -9,7 +9,7 @@ import Button from "@mui/material/Button";
 const Form = () => {
   return (
     <div>
-      <h1 className="text-connect">Connect with us</h1>
+      <h2 className="text-connect">Connect with us</h2>
       <div className="main-form">
         <div className="form">
           <div className="input">
