@@ -1,4 +1,4 @@
-import '../../styles/header.css';
+import '../../../styles/header.css';
 import React from 'react';
 import {image1} from "../../../../img";
 import Button from "@mui/material/Button";

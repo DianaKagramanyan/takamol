@@ -6,6 +6,10 @@ import card3 from './card3.png';
 import backimage from './backimage.png';
 import imagelast from './imagelast.png';
 import takamol from './takamol.png';
+import aboutPlatform from './aboutPlatform.png';
+import aboutAgency from './aboutAgency.png';
+import agencyGoals from './agencyGoals.png';
+import agencySoftware from './agencySoftware.png';
 
 export {
   logo,
@@ -15,5 +19,9 @@ export {
   card3,
   backimage,
   imagelast,
-  takamol
+  takamol,
+  aboutPlatform,
+  aboutAgency,
+  agencyGoals,
+  agencySoftware
 }

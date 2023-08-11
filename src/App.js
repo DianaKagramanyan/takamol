@@ -5,10 +5,10 @@ import About from "./public/homepage/pages/About";
 import Services from "./public/homepage/pages/Services";
 import Faq from "./public/homepage/pages/Faq";
 import MainContent from "./public/homepage/components/home/MainContent";
-import './public/homepage/styles/header.css'
 import ServiceDescription from "./public/homepage/pages/ServiceDescription";
 import Login from "./public/homepage/pages/Login";
 import Registration from "./public/homepage/pages/Registration";
+import './public/styles/header.css';
 
 
 function App() {
