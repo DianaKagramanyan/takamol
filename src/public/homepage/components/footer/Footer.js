@@ -49,9 +49,7 @@ const Footer = () => {
             <InstagramIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
           </Link>
           <Link to="https://www.youtube.com/c/HRSDsa" target="_blank">
-            {/*<a href="https://www.youtube.com/c/HRSDsa" target="_blank">*/}
             <YouTubeIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
-            {/*</a>*/}
           </Link>
           <Link to="https://twitter.com/hrsd_sa?s=21&t=oVEYi49T6hc944BpCiHpVQ" target="_blank">
             <TwitterIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
