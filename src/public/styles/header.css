@@ -343,6 +343,7 @@ body {
     padding: 30px;
     margin-bottom: 70px;
 }
+
 .header-about {
     font-size: 36px;
     color: rgb(20, 65, 90);
@@ -397,18 +398,21 @@ body {
     padding: 24px 0px;
     text-shadow: 0px 0.3px, 0.3px 0px, 0.3px 0.3px;
 }
+
 .main-form {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
 }
-.form{
+
+.form {
     width: 40%;
     box-sizing: border-box;
     box-shadow: 2px 4px 12px rgba(11, 68, 70, 0.25);
     margin-right: 10%;
 }
+
 .input {
     display: flex;
     flex-direction: column;
@@ -419,9 +423,42 @@ body {
     background: none;
     padding: 16.5px 14px;
 }
+
 .input-1 {
     margin: 10px;
 }
+
 .button-send {
     margin: 10px;
+}
+
+
+/*//////////////////////////////////////*/
+/*QUESTIONS*/
+/*////////////////////////////////////////*/
+.questions-container {
+    max-width: 80%;
+    padding: 12px 0px;
+    margin: 48px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 12px rgba(11, 68, 70, 0.25);
+}
+
+.row-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+}
+
+.row-content-text {
+    margin: 10px;
+    padding: 5px;
+}
+
+.arrow {
+    max-width: 24px;
+    max-height: 24px;
 }

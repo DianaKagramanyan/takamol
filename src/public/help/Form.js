@@ -23,8 +23,6 @@ const Form = () => {
                       variant="contained">Send</Button>
             </div>
           </div>
-
-
         </div>
 
 
@@ -46,7 +44,6 @@ const Form = () => {
               <TwitterIcon className="icon-three" sx={{color: "#3C8084", fontSize: 30}}/>
             </Link>
           </div>
-
         </div>
 
 
