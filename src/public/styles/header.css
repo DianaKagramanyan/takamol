@@ -394,16 +394,17 @@ body {
     color: rgb(50, 90, 111);
     font-size: 30px;
     margin-top: -2%;
-    margin-left: 12%;
+    margin-left: 100px;
     padding: 24px 0px;
     text-shadow: 0px 0.3px, 0.3px 0px, 0.3px 0.3px;
 }
 
 .main-form {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
     margin-bottom: 100px;
+    margin-left: 100px;
 }
 
 .form {

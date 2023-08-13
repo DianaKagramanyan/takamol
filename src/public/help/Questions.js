@@ -18,7 +18,7 @@ const Questions = () => {
 
   return (
     <div>
-      <h2>common questions</h2>
+      <h2 className="text-connect">common questions</h2>
 
       <div className="questions-container">
         {
