@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className="section">
         <div className="section1">Important links</div>
-        <Link to="/AboutPlatform Platform" style={{textDecoration: 'none'}}>
+        <Link to="/About" style={{textDecoration: 'none'}}>
           <div className="section1">About</div>
         </Link>
         <Link to="/Our Services" style={{textDecoration: 'none'}}>
