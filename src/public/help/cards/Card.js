@@ -11,15 +11,18 @@ export default function BasicCard({item}) {
 
   return (
     <div className="userCard">
-      <Card className="card-description"  sx={{minWidth: 275}}>
+      <Card className="card-description" sx={{minWidth: 275}}>
         <CardContent className="cont">
           <DescriptionIcon className="image-paper" sx={{fontSize: 100, color: "#147e82"}}/>
-          <Typography className="title" sx={{color: "rgb(20, 65, 90)"}} variant="body2">
-            {title}
-          </Typography>
+          <div className="title">
+            <Typography className="title" sx={{color: "rgb(20, 65, 90)"}} variant="body2">
+              {title}
+            </Typography>
+          </div>
         </CardContent>
-        <CardActions>
-          <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined">
+        <CardActions className="button-download">
+          <Button className="button-download" sx={{color: " #3C8084"}}
+                  variant="outlined">
             Download
           </Button>
         </CardActions>

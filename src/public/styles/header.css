@@ -487,19 +487,21 @@ section {
 
 .userCard {
     box-shadow: rgba(20, 65, 90, 0.2) 0px 3px 15px 0px;
+    height: 300px;
 }
 
 .card-description {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
     /*padding: 24px;*/
     height: 100%;
     border-radius: 2px;
 }
 
 .title {
-    margin: 0px 0px 0.35em;
+    margin-top: 20px;
     line-height: 1.5;
     letter-spacing: 0.00938em;
     text-align: center;
@@ -507,6 +509,26 @@ section {
     font-weight: 700;
     font-size: 18px;
 }
+.button-download {
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 7px 21px;
+    bottom: 0px;
+    border-radius: 0.3em;
+    font-size: 14px;
+    width: 100%;
+    color: rgb(60, 128, 132);
+}
+
+.button-download:hover {
+}
+
+
 .pagination {
     margin-bottom: 50px;
 }
