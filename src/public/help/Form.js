@@ -36,7 +36,7 @@ const Form = () => {
             <div className="det">Kingdom of Saudi Arabia</div>
           </div>
 
-          <div className="second-loc">
+          <div className="second-loc" >
             <div className="det">You can also communicate through social networking pages</div>
             <div>
               <Link to="https://www.instagram.com/hrsd_sa/?igshid=YmMyMTA2M2Y%3D" target="_blank">
