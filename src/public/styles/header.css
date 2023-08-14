@@ -333,14 +333,20 @@ body {
 }
 
 .header-about {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 36px;
-    color: rgb(20, 65, 90);
+    font-weight: 540;
+    color: #14415A;
     text-shadow: 0px 0.7px, 0.7px 0px, 0.7px 0.7px;
     margin-bottom: 30px;
+    line-height: 1.167;
+    letter-spacing: -0.24px;
+
 }
 
 .about-description {
-    font-size: 20px;
+    font-size: 18px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     /*text-align: justify;*/
     width: 600px;
 }
@@ -359,6 +365,7 @@ body {
 }
 
 .description-agency {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
     text-align: justify;
     width: 486px;
@@ -376,9 +383,10 @@ body {
 /*FORM*/
 /*////////////////////////////////////////*/
 .text-conn {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     color: #325A6F;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 550;
     line-height: 1.2;
     letter-spacing: -.24px;
     margin-left: 100px;
@@ -423,9 +431,10 @@ body {
 /*QUESTIONS*/
 /*////////////////////////////////////////*/
 .text-connect {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     color: #325A6F;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 550;
     line-height: 1.2;
     letter-spacing: -.24px;
     margin-left: 100px;
@@ -468,9 +477,10 @@ body {
 /*USERCARDS*/
 /*////////////////////////////////////////*/
 .text-user {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     color: #325A6F;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 550;
     line-height: 1.2;
     letter-spacing: -.24px;
     margin-left: 100px;
@@ -520,6 +530,7 @@ section {
     font-weight: 700;
 }
 .button-download {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     cursor: pointer;
     vertical-align: middle;
     font-weight: 500;
