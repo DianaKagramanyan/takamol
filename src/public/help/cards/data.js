@@ -159,6 +159,78 @@ const list = [
     id: 40,
     title: "User guide for the service of issuing a license for the National Elderly Center",
   },
+  {
+    id: 41,
+    title: "User guide for the initial approval cancellation service for private family counseling centers",
+  },
+  {
+    id: 42,
+    title: "User guide for the service of revoking the initial approval for centers for people with disabilities",
+  },
+  {
+    id: 43,
+    title: "User guide for the service of revoking the initial approval of the private childcare centers",
+  },
+  {
+    id: 44,
+    title: "User guide for the initial approval cancellation service for the Elderly National Center",
+  },
+  {
+    id: 45,
+    title: "User guide for licensing renewal service for centers for people with disabilities",
+  },
+  {
+    id: 46,
+    title: "User guide for registration and accreditation of programs offered in centers (day care)",
+  },
+  {
+    id: 47,
+    title: "User guide for moving the headquarters of private family counseling centers",
+  },
+  {
+    id: 48,
+    title: "User guide for moving the headquarters of the centers for people with civil disabilities",
+  },
+  {
+    id: 49,
+    title: "User guide for moving the headquarters of the National Elderly Center",
+  },
+  {
+    id: 50,
+    title: "User guide for the transfer of ownership of private family counseling centers",
+  },
+  {
+    id: 51,
+    title: "User guide for the service of transferring the ownership of the National Elderly Center",
+  },
+  {
+    id: 52,
+    title: "Patron Dashboard User Guide",
+  },
+  {
+    id: 53,
+    title: "User guide for the service of issuing an initial approval for centers for people with private disabilities (corporate capacity)",
+  },
+  {
+    id: 54,
+    title: "User guide for the service of issuing an initial approval for a civil family counseling center (corporate capacity)",
+  },
+  {
+    id: 55,
+    title: "User guide for the service of issuing an initial approval for a private children's hospitality center (corporate capacity)",
+  },
+  {
+    id: 56,
+    title: "User Guide for Issuing Initial Approval for a Family Children's Hospitality Center (Normal)",
+  },
+  {
+    id: 57,
+    title: "User guide for the service of issuing an initial approval for the Elderly Center, my family (corporate capacity)",
+  },
+  {
+    id: 58,
+    title: "Recommendation letter service user guide for orphans",
+  },
 ];
 
 export default list;
