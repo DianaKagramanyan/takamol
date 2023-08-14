@@ -4,7 +4,7 @@ import ShowCards from "./cards/ShowCards";
 const UserCards = () => {
   return (
     <div>
-      <h2 className="text-connect">User guides</h2>
+      <h2 className="text-user">user guides</h2>
       <ShowCards/>
     </div>
   );

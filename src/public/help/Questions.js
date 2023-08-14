@@ -24,13 +24,13 @@ const Questions = () => {
         {
           show ?
             <div onClick={() => setShow(false)} className="row-wrapper">
-              <p>What category is the platform services targeting?</p>
+              <p className="ques">What category is the platform services targeting?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow(true)} className="row-wrapper">
-                <p>What category is the platform services targeting?</p>
+                <p className="ques">What category is the platform services targeting?</p>
                 <KeyboardArrowUpIcon/>
               </div>
               <div className="row-content-text">
@@ -48,13 +48,13 @@ const Questions = () => {
         {
           show1 ?
             <div onClick={() => setShow1(false)} className="row-wrapper">
-              <p>What services are available for people with disabilities on the platform?</p>
+              <p className="ques">What services are available for people with disabilities on the platform?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow1(true)} className="row-wrapper">
-                <p>What services are available for people with disabilities on the platform?</p>
+                <p className="ques">What services are available for people with disabilities on the platform?</p>
                 <KeyboardArrowUpIcon/>
               </div>
               <div className="row-content-text">
@@ -77,13 +77,13 @@ const Questions = () => {
         {
           show2 ?
             <div onClick={() => setShow2(false)} className="row-wrapper">
-              <p>What services are available for orphans on the platform?</p>
+              <p className="ques">What services are available for orphans on the platform?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow2(true)} className="row-wrapper">
-                <p>What services are available for orphans on the platform?</p>
+                <p className="ques">What services are available for orphans on the platform?</p>
                 <KeyboardArrowUpIcon/>
               </div>
               <div className="row-content-text">
@@ -114,13 +114,13 @@ const Questions = () => {
         {
           show3 ?
             <div onClick={() => setShow3(false)} className="row-wrapper">
-              <p>What are the services available for the category of family counseling on the platform?</p>
+              <p className="ques">What are the services available for the category of family counseling on the platform?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow3(true)} className="row-wrapper">
-                <p>What are the services available for the category of family counseling on the platform?</p>
+                <p className="ques">What are the services available for the category of family counseling on the platform?</p>
                 <KeyboardArrowUpIcon/>
               </div>
               <div className="row-content-text">
@@ -132,13 +132,13 @@ const Questions = () => {
         {
           show4 ?
             <div onClick={() => setShow4(false)} className="row-wrapper">
-              <p>What services are available for the elderly category on the platform?</p>
+              <p className="ques">What services are available for the elderly category on the platform?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow4(true)} className="row-wrapper">
-                <p>What services are available for the elderly category on the platform?</p>
+                <p className="ques">What services are available for the elderly category on the platform?</p>
                 <KeyboardArrowUpIcon/>
               </div>
               <div className="row-content-text">
@@ -150,13 +150,13 @@ const Questions = () => {
         {
           show5 ?
             <div onClick={() => setShow5(false)} className="row-wrapper">
-              <p>What are the services available to the civil centers on the platform?</p>
+              <p className="ques">What are the services available to the civil centers on the platform?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow5(true)} className="row-wrapper">
-                <p>What are the services available to the civil centers on the platform?</p>
+                <p className="ques">What are the services available to the civil centers on the platform?</p>
                 <KeyboardArrowUpIcon/>
               </div>
               <div className="row-content-text">
@@ -185,13 +185,13 @@ const Questions = () => {
         {
           show6 ?
             <div onClick={() => setShow6(false)} className="row-wrapper">
-              <p>What services are available for events on the platform?</p>
+              <p className="ques">What services are available for events on the platform?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow6(true)} className="row-wrapper">
-                <p>What services are available for events on the platform?</p>
+                <p className="ques">What services are available for events on the platform?</p>
                 <KeyboardArrowUpIcon/>
               </div>
               <div className="row-content-text">
@@ -203,13 +203,13 @@ const Questions = () => {
         {
           show7 ?
             <div onClick={() => setShow7(false)} className="row-wrapper">
-              <p>Is there financial support through the platform?</p>
+              <p className="ques">Is there financial support through the platform?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow7(true)} className="row-wrapper">
-                <p>Is there financial support through the platform?</p>
+                <p className="ques">Is there financial support through the platform?</p>
                 <KeyboardArrowUpIcon/>
               </div>
               <div className="row-content-text">
@@ -221,13 +221,13 @@ const Questions = () => {
         {
           show8 ?
             <div onClick={() => setShow8(false)} className="row-wrapper">
-              <p>Can the parent or legal guardian request services on behalf of the beneficiary?</p>
+              <p className="ques">Can the parent or legal guardian request services on behalf of the beneficiary?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow8(true)} className="row-wrapper">
-                <p>Can the parent or legal guardian request services on behalf of the beneficiary?</p>
+                <p className="ques">Can the parent or legal guardian request services on behalf of the beneficiary?</p>
                 <KeyboardArrowUpIcon/>
               </div>
               <div className="row-content-text">
@@ -241,13 +241,13 @@ const Questions = () => {
         {
           show9 ?
             <div onClick={() => setShow9(false)} className="row-wrapper">
-              <p>How can I reach the engineering offices in the area?</p>
+              <p className="ques">How can I reach the engineering offices in the area?</p>
               <KeyboardArrowDownIcon/>
             </div>
             :
             <div>
               <div onClick={() => setShow9(true)} className="row-wrapper">
-                <p>How can I reach the engineering offices in the area?</p>
+                <p className="ques">How can I reach the engineering offices in the area?</p>
                 <KeyboardArrowDownIcon/>
               </div>
               <div className="row-content-text">

@@ -206,18 +206,6 @@ body {
     align-items: center;
 }
 
-/*.card-small {*/
-/*    box-sizing: border-box;*/
-/*    position: relative;*/
-/*    height: 270px;*/
-/*    width: 100%;*/
-/*    padding: 24px;*/
-/*    margin-left: 20px;*/
-/*    box-shadow: 2px 4px 12px rgba(11, 68, 70, 0.25);*/
-/*box-shadow: 2px 40px 30px red;*/
-/*}*/
-
-
 .icon {
     color: #147e82;
     font-style: normal;
@@ -387,18 +375,15 @@ body {
 /*//////////////////////////////////////*/
 /*FORM*/
 /*////////////////////////////////////////*/
-.text-connect {
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: -0.24px;
-    color: rgb(50, 90, 111);
+.text-conn {
+    color: #325A6F;
     font-size: 30px;
-    margin-top: -2%;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.24px;
     margin-left: 100px;
-    padding: 24px 0px;
-    text-shadow: 0px 0.3px, 0.3px 0px, 0.3px 0.3px;
+    margin-bottom: 50px;
 }
-
 .main-form {
     display: flex;
     /*align-items: center;*/
@@ -437,15 +422,30 @@ body {
 /*//////////////////////////////////////*/
 /*QUESTIONS*/
 /*////////////////////////////////////////*/
+.text-connect {
+    color: #325A6F;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.24px;
+    margin-left: 100px;
+    margin-bottom: -70px;
+}
 .questions-container {
     padding: 12px 0px;
     margin: 100px;
     box-sizing: border-box;
     box-shadow: 2px 4px 12px rgba(11, 68, 70, 0.25);
 }
+.ques {
+    padding: 10px 0px;
+    color: #757070;
+    font-size: 18px;
+}
 
 .row-wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
@@ -467,6 +467,15 @@ body {
 /*//////////////////////////////////////*/
 /*USERCARDS*/
 /*////////////////////////////////////////*/
+.text-user {
+    color: #325A6F;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.24px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
 .section-1 {
     display: flex;
     flex-direction: column;
@@ -498,6 +507,8 @@ section {
     /*padding: 24px;*/
     height: 100%;
     border-radius: 2px;
+    color: #14415A;
+    font-size: 14px;
 }
 
 .title {
@@ -507,7 +518,6 @@ section {
     text-align: center;
     color: rgb(20, 65, 90);
     font-weight: 700;
-    font-size: 18px;
 }
 .button-download {
     cursor: pointer;
