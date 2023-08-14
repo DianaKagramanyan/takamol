@@ -1,26 +1,58 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import OutlinedInput from '@mui/material/OutlinedInput';
 import Button from "@mui/material/Button";
 import PlaceIcon from '@mui/icons-material/Place';
+import {TextField} from "@mui/material";
+
 
 const Form = () => {
+const [info, setInfo] = useState();
+
   return (
     <div>
       <h2 className="text-conn">Connect with us</h2>
       <div className="main-form">
         <div className="form">
           <div className="input">
-            <OutlinedInput className="input-1"/>
-            <OutlinedInput className="input-1"/>
-            <OutlinedInput className="input-1"/>
-            <OutlinedInput className="input-1"/>
-            <OutlinedInput className="input-1"/>
+            <TextField
+              id="outlined-error-helper-text"
+              label="* Name"
+              value={info}
+              onChange={(e)=> setInfo(e.target.value)}
+              helperText={!info ? "This field is required" : null}
+              error={!info}
+            />
+            <br/>
+            <TextField
+              // helperText="This field is required"
+              id="demo-helper-text-aligned"
+              label="* mobile"
+            />
+            <br/>
+            <TextField
+              // helperText="This field is required"
+              id="demo-helper-text-aligned"
+              label="* Email"
+            />
+            <br/>
+            <TextField
+              // helperText="This field is required"
+              id="demo-helper-text-aligned"
+              label="* Mesage subject"
+            />
+            <br/>
+            <TextField
+              // helperText="This field is required"
+              id="demo-helper-text-aligned"
+              label="* Mesage text"
+            />
+            <br/>
             <div className="button-send">
-              <Button sx={{color: "white", backgroundColor: "rgb(60, 128, 132)", width: "150px"}}
+              <Button className="button-send"
+                      sx={{color: "white", backgroundColor: "rgb(60, 128, 132)", width: "150px"}}
                       variant="contained">Send</Button>
             </div>
           </div>
@@ -36,7 +68,7 @@ const Form = () => {
             <div className="det">Kingdom of Saudi Arabia</div>
           </div>
 
-          <div className="second-loc" >
+          <div className="second-loc">
             <div className="det">You can also communicate through social networking pages</div>
             <div>
               <Link to="https://www.instagram.com/hrsd_sa/?igshid=YmMyMTA2M2Y%3D" target="_blank">
