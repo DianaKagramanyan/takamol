@@ -16,7 +16,7 @@ export default function BasicCard({item}) {
           <DescriptionIcon className="image-paper" sx={{fontSize: 100, color: "#147e82"}}/>
           <div className="title">
             <Typography className="title" sx={{color: "rgb(20, 65, 90)"}} variant="body2">
-              {title}
+           {title}
             </Typography>
           </div>
         </CardContent>

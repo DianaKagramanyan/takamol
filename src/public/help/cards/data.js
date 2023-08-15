@@ -29,7 +29,7 @@ const list = [
   },
   {
     id: 8,
-    title: "Service of requesting a disability scene issuance",
+    title: "Services of requesting a disability scene issuance",
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const list = [
   },
   {
     id: 18,
-    title: "Service of requesting renewal of a final license for private family counseling centers (corporate capacity)",
+    title: "Services of requesting renewal of a final license for private family counseling centers (corporate capacity)",
   },
   {
     id: 19,
@@ -97,19 +97,19 @@ const list = [
   },
   {
     id: 25,
-    title: "Service of requesting suspension of work in private family counseling centers",
+    title: "Services of requesting suspension of work in private family counseling centers",
   },
   {
     id: 26,
-    title: "Service of requesting suspension of work in centers for people with civil disabilities",
+    title: "Services of requesting suspension of work in centers for people with civil disabilities",
   },
   {
     id: 27,
-    title: "Service of requesting suspension of work in private childcare centers",
+    title: "Services of requesting suspension of work in private childcare centers",
   },
   {
     id: 28,
-    title: "Service of requesting suspension of work in the Elderly National Center",
+    title: "Services of requesting suspension of work in the Elderly National Center",
   },
   {
     id: 29,
@@ -129,7 +129,7 @@ const list = [
   },
   {
     id: 33,
-    title: "Service of requesting a letter of recommendation for orphans",
+    title: "Services of requesting a letter of recommendation for orphans",
   },
   {
     id: 34,
@@ -141,7 +141,7 @@ const list = [
   },
   {
     id: 36,
-    title: "User Guide Issuance of Initial Approval Service for the Elderly Family Center (Natural Capacity)",
+    title: "User Guide Issuance of Initial Approval Services for the Elderly Family Center (Natural Capacity)",
   },
   {
     id: 37,
