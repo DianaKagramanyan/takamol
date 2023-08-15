@@ -53,7 +53,7 @@ export default function BasicTabs() {
   };
 
   return (
-    <div >
+    <div className="All" >
 
       <Box className="box" sx={{width: '100%'}}>
 
@@ -102,7 +102,7 @@ export default function BasicTabs() {
                         <GroupsOutlinedIcon sx={{fontSize: 80}}/>
                       </div>
                       <Typography className="name1" variant="body2">
-                        Social record
+                        Application service for the sponsoring and friendly families program
                       </Typography>
                     </CardContent>
                     <CardActions>
