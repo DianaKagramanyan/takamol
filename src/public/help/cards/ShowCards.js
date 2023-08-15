@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import list from './data';
 import Card from './Card';
 import {Pagination, Stack} from "@mui/material";
+import ScrollToBottom from "./scrollToBottom";
 
 const ShowCards = () => {
   // const [page, setPage] = useState(1);
@@ -35,6 +36,7 @@ const ShowCards = () => {
 
   return (
     <div className="section-1">
+      <ScrollToBottom/>
       <section>
         {
           records.map((item) =>
