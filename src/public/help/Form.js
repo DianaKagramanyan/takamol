@@ -9,7 +9,7 @@ import {TextField} from "@mui/material";
 
 
 const Form = () => {
-const [info, setInfo] = useState();
+  const [info, setInfo] = useState('');
 
   return (
     <div>
@@ -21,7 +21,7 @@ const [info, setInfo] = useState();
               id="outlined-error-helper-text"
               label="* Name"
               value={info}
-              onChange={(e)=> setInfo(e.target.value)}
+              onChange={(e) => setInfo(e.target.value)}
               helperText={!info ? "This field is required" : null}
               error={!info}
             />

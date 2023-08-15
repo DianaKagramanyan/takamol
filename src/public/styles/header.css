@@ -425,7 +425,8 @@ body {
     display: flex;
     flex-direction: column;
 }
-.first-loc{
+
+.first-loc {
     margin-bottom: 50px;
 }
 
@@ -572,4 +573,22 @@ section {
 
 .pagination {
     margin-bottom: 50px;
+}
+
+.page-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.page {
+    text-decoration: none;
+    list-style: none;
+    margin: 5px;
+    color: black;
+}
+.page:hover{
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 10%;
 }
