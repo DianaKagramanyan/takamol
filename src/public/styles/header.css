@@ -612,6 +612,12 @@ section {
     justify-content: center;
 }
 
+.button-positions {
+
+
+
+}
+
 .servicesCards {
     display: flex;
     flex-direction: column;
@@ -676,8 +682,9 @@ section {
     /*padding: 30px;*/
     margin: 20px;
 }
+
 .All {
-   margin-left: -450px;
+    margin-left: -450px;
 }
 
 

@@ -30,7 +30,7 @@ const Service = () => {
               <div>
                 <div className="make-center">
                   <div>
-                    <Button onClick={() => setShow(false)} variant="text" sx={{color: " #6B778C"}}>POSITIONS</Button>
+                    <Button className="button-positions" onClick={() => setShow(false)} variant="text" sx={{color: " #6B778C"}}>POSITIONS</Button>
                   </div>
                   <div>
                     <Button variant="text" sx={{color: " #6B778C"}}>BENEFICIARIES</Button>
