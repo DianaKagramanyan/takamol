@@ -16,10 +16,10 @@ const Service = () => {
         </div>
         <div>
           <h1 className="header-about">Our services</h1>
-          <p className="about-description">
+          <div className="about-description">
             This platform provides a set of electronic services to improve and facilitate procedures
             related to private rehabilitation centers for the beneficiaries and owners of the centers
-          </p>
+          </div>
         </div>
       </div>
 

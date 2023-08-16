@@ -12,19 +12,19 @@ const AboutPlatform = () => {
         </div>
         <div>
           <h1 className="header-about">About the platform</h1>
-          <p className="about-description">
+          <div className="about-description">
             The rehabilitation and social guidance platform is a unified platform for developing and
             automating the services of the Rehabilitation and Social Guidance Agency. And to facilitate
             access to agency services to be a meeting point between the Ministry of Human Resources and Social
             Development and the beneficiaries.
-          </p>
+          </div>
         </div>
       </div>
 
       <div className="about-Agency">
         <div>
           <h1>About the agency</h1>
-          <p className="description-agency">
+          <div className="description-agency">
             The Rehabilitation and Social Guidance Agency operates according to comprehensive policies
             and offers various programs for all eligible groups based on a strategy of empowerment and
             capacity building of beneficiaries. The Agency seeks to empower the family structurally and
@@ -49,7 +49,7 @@ const AboutPlatform = () => {
             members, targeting support for the groups most in need of assistance and taking effective
             care that contributes to their independence and their non-reliance on government
             assistance This process is carried out with high efficiency and great effect.
-          </p>
+          </div>
         </div>
         <div>
           <img className="img-aboutAgency" src={aboutAgency} alt="aboutAgency"/>
@@ -63,7 +63,7 @@ const AboutPlatform = () => {
         </div>
         <div>
           <h1>Agency goals</h1>
-          <p className="description-agency">
+          <div className="description-agency">
             <ul>
               <li>
                 Setting a set of goals that must be achieved through a precise and clear plan of
@@ -84,7 +84,7 @@ const AboutPlatform = () => {
                 its employees and its affiliated branches.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
 
@@ -93,7 +93,7 @@ const AboutPlatform = () => {
       <div className="about-Agency">
         <div>
           <h1>Agency software</h1>
-          <p className="description-agency">
+          <div className="description-agency">
             The agency provides many programs and projects that contribute to raising the economic
             and social level of the beneficiaries, taking them into their own hands and turning
             them into productive energies. It guarantees itself by sponsoring, training and
@@ -123,7 +123,7 @@ const AboutPlatform = () => {
             management, in order to achieve the strategic goals that enable the successful completion
             of the project. The agency takes into account quality, time and cost. By applying project
             management methodology and governance, the agency implements project and program outputs
-          </p>
+          </div>
         </div>
         <div>
           <img className="img-aboutAgency" src={agencySoftware} alt="agencySoftware"/>
