@@ -62,13 +62,13 @@ const Form = () => {
     // If all fields are valid, perform form submission
     if (isValid) {
       // Simulate form submission with alert
-      alert(`Submitted Data:
-        Name: ${name}
-        Mobile: ${mobile}
-        Email: ${email}
-        Subject: ${subject}
-        Message: ${message}
-      `);
+      // alert(`Submitted Data:
+      //   Name: ${name}
+      //   Mobile: ${mobile}
+      //   Email: ${email}
+      //   Subject: ${subject}
+      //   Message: ${message}
+      // `);
 
       // Clear form fields after submission
       setName('');
@@ -118,7 +118,6 @@ const Form = () => {
             />
             <br/>
             <TextField
-              helperText={emailError ? "This field is required" : ""}
               error={emailError}
               value={email}
               onChange={(e) => {
