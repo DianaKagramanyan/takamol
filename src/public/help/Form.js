@@ -59,7 +59,6 @@ const Form = () => {
       setMessageError(false);
     }
 
-
     // If all fields are valid, perform form submission
     if (isValid) {
       // Simulate form submission with alert
@@ -79,6 +78,11 @@ const Form = () => {
       setMessage('');
     }
   };
+  const handleBlur = (fieldName, fieldValue, setErrorFunction) => {
+    if (!fieldValue) {
+      setErrorFunction(true);
+    }
+  };
 
 
   return (
@@ -93,7 +97,11 @@ const Form = () => {
               id="outlined-error-helper-text"
               label="* Name"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => {
+                setName(e.target.value);
+                setNameError(false);
+              }}
+              onBlur={() => handleBlur('name', name, setNameError)}
             />
             <br/>
             <TextField
@@ -101,35 +109,51 @@ const Form = () => {
               error={mobileError}
               id="outlined-error-helper-text"
               label="* mobile"
-              value={name}
-              onChange={(e) => setMobile(e.target.value)}
+              value={mobile}
+              onChange={(e) => {
+                setMobile(e.target.value);
+                setMobileError(false);
+              }}
+              onBlur={() => handleBlur('mobile', mobile, setMobileError)}
             />
             <br/>
             <TextField
               helperText={emailError ? "This field is required" : ""}
               error={emailError}
               value={email}
-              onChange={(e) => emailError(e.target.value)}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setEmailError(false);
+              }}
               id="demo-helper-text-aligned"
               label="* Email"
+              onBlur={() => handleBlur('email', email, setEmailError)}
             />
             <br/>
             <TextField
               helperText={subjectError ? "This field is required" : ""}
               error={subjectError}
               value={subject}
-              onChange={(e) => subjectError(e.target.value)}
+              onChange={(e) => {
+                setSubject(e.target.value);
+                setSubjectError(false);
+              }}
               id="demo-helper-text-aligned"
               label="* Subject"
+              onBlur={() => handleBlur('subject', subject, setSubjectError)}
             />
             <br/>
             <TextField
               helperText={messageError ? "This field is required" : ""}
               error={messageError}
               value={message}
-              onChange={(e) => messageError(e.target.value)}
+              onChange={(e) => {
+                setMessage(e.target.value);
+                setMessageError(false);
+              }}
               id="demo-helper-text-aligned"
               label="* Text"
+              onBlur={() => handleBlur('message', message, setMessageError)}
             />
             <br/>
             <div className="button-send">
