@@ -9,7 +9,77 @@ import {TextField} from "@mui/material";
 
 
 const Form = () => {
-  const [info, setInfo] = useState('');
+  const [name, setName] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const [nameError, setNameError] = useState(false);
+  const [mobileError, setMobileError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [subjectError, setSubjectError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
+
+  const handleSubmit = () => {
+    // Perform form submission logic here
+    let isValid = true;
+
+    if (!name) {
+      setNameError(true);
+      isValid = false;
+    } else {
+      setNameError(false);
+    }
+
+    if (!mobile) {
+      setMobileError(true);
+      isValid = false;
+    } else {
+      setMobileError(false);
+    }
+
+    if (!email) {
+      setEmailError(true);
+      isValid = false;
+    } else {
+      setEmailError(false);
+    }
+    if (!subject) {
+      setSubjectError(true);
+      isValid = false;
+    } else {
+      setSubjectError(false);
+    }
+
+    if (!message) {
+      setMessageError(true);
+      isValid = false;
+    } else {
+      setMessageError(false);
+    }
+
+
+    // If all fields are valid, perform form submission
+    if (isValid) {
+      // Simulate form submission with alert
+      alert(`Submitted Data:
+        Name: ${name}
+        Mobile: ${mobile}
+        Email: ${email}
+        Subject: ${subject}
+        Message: ${message}
+      `);
+
+      // Clear form fields after submission
+      setName('');
+      setMobile('');
+      setEmail('');
+      setSubject('');
+      setMessage('');
+    }
+  };
+
 
   return (
     <div>
@@ -18,42 +88,56 @@ const Form = () => {
         <div className="form">
           <div className="input">
             <TextField
+              helperText={nameError ? "This field is required" : ""}
+              error={nameError}
               id="outlined-error-helper-text"
               label="* Name"
-              value={info}
-              onChange={(e) => setInfo(e.target.value)}
-              helperText={!info ? "This field is required" : null}
-              error={!info}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <br/>
             <TextField
-              // helperText="This field is required"
-              id="demo-helper-text-aligned"
+              helperText={mobileError ? "This field is required" : ""}
+              error={mobileError}
+              id="outlined-error-helper-text"
               label="* mobile"
+              value={name}
+              onChange={(e) => setMobile(e.target.value)}
             />
             <br/>
             <TextField
-              // helperText="This field is required"
+              helperText={emailError ? "This field is required" : ""}
+              error={emailError}
+              value={email}
+              onChange={(e) => emailError(e.target.value)}
               id="demo-helper-text-aligned"
               label="* Email"
             />
             <br/>
             <TextField
-              // helperText="This field is required"
+              helperText={subjectError ? "This field is required" : ""}
+              error={subjectError}
+              value={subject}
+              onChange={(e) => subjectError(e.target.value)}
               id="demo-helper-text-aligned"
-              label="* Mesage subject"
+              label="* Subject"
             />
             <br/>
             <TextField
-              // helperText="This field is required"
+              helperText={messageError ? "This field is required" : ""}
+              error={messageError}
+              value={message}
+              onChange={(e) => messageError(e.target.value)}
               id="demo-helper-text-aligned"
-              label="* Mesage text"
+              label="* Text"
             />
             <br/>
             <div className="button-send">
               <Button className="button-send"
                       sx={{color: "white", backgroundColor: "rgb(60, 128, 132)", width: "150px"}}
-                      variant="contained">Send</Button>
+                      variant="contained"
+                      onClick={handleSubmit}
+              >Send</Button>
             </div>
           </div>
         </div>
