@@ -8,6 +8,23 @@ import AllCards from "./AllCards";
 const Service = () => {
   const [show, setShow] = useState(false);
 
+  const buttonStyles = {
+    color: '#6B778C',
+    // borderBottom: '2px solid #6B778C',
+    // '&:hover': {
+    //   borderBottom: '1px solid #6B778C',
+    // },
+  };
+
+  const selectedButtonStyles = {
+    color: '#3C8084',
+    // borderBottom: '1px solid #3C8084',
+    // '&:hover': {
+    //   borderBottom: '1px solid #3C8084',
+    // },
+  };
+
+
   return (<div>
 
       <div className="about-platform">
@@ -30,10 +47,20 @@ const Service = () => {
               <div>
                 <div className="make-center">
                   <div>
-                    <Button className="button-positions" onClick={() => setShow(false)} variant="text" sx={{color: " #6B778C"}}>POSITIONS</Button>
+                    <Button
+                      className="button-positions"
+                      onClick={() => setShow(false)}
+                      variant="text"
+                      style={buttonStyles}
+                    >
+                      POSITIONS</Button>
                   </div>
                   <div>
-                    <Button variant="text" sx={{color: " #6B778C"}}>BENEFICIARIES</Button>
+                    <Button
+                      variant="text"
+                      style={selectedButtonStyles}
+                    >BENEFICIARIES
+                    </Button>
                   </div>
                 </div>
                 <div>
@@ -44,10 +71,17 @@ const Service = () => {
               <div>
                 <div className="make-center">
                   <div>
-                    <Button variant="text" sx={{color: " #6B778C"}}>POSITIONS</Button>
+                    <Button
+                      variant="text"
+                      style={selectedButtonStyles}
+                    >POSITIONS</Button>
                   </div>
                   <div>
-                    <Button onClick={() => setShow(true)} variant="text" sx={{color: " #6B778C"}}>BENEFICIARIES</Button>
+                    <Button
+                      onClick={() => setShow(true)}
+                      variant="text"
+                      style={buttonStyles}
+                    >BENEFICIARIES</Button>
                   </div>
                 </div>
                 <div>
