@@ -29,6 +29,7 @@ const DisplayCard = () => {
           count={npage}
           page={currentPage}
           onChange={handlePageChange}
+          classes={{ul: 'custom-pagination'}}
         />
       </div>
 

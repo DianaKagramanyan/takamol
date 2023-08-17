@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useState} from 'react';
 import list from './data';
 import Card from './Card';
 import {Pagination, Stack} from "@mui/material";
@@ -28,6 +28,7 @@ const ShowCards = () => {
             count={npage}
             page={currentPage}
             onChange={handlePageChange}
+            classes={{ul: 'custom-pagination'}}
           />
         </Stack>
       </div>

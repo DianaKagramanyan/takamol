@@ -674,5 +674,8 @@ section {
 /*.page:hover {*/
 /*    background-color: yellow;*/
 /*}*/
-
+.custom-pagination .MuiPaginationItem-root.Mui-selected {
+    background-color: #3C8084 !important;
+    color: white !important;
+}
 
