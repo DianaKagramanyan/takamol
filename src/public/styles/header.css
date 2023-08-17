@@ -587,12 +587,6 @@ section {
     justify-content: center;
 }
 
-.button-positions {
-
-
-
-}
-
 .servicesCards {
     display: flex;
     flex-direction: column;
@@ -668,12 +662,6 @@ section {
     margin-top: 20px;
     margin-bottom: 50px;
 }
-.page {
-
-}
-/*.page:hover {*/
-/*    background-color: yellow;*/
-/*}*/
 .custom-pagination .MuiPaginationItem-root.Mui-selected {
     background-color: #3C8084 !important;
     color: white !important;
