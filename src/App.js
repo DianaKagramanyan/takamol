@@ -1,5 +1,4 @@
 import Header from "./public/homepage/components/header/Header";
-import Footer from "./public/homepage/components/footer/Footer";
 import {Route, Routes} from "react-router-dom";
 import Services from "./public/pages/Services";
 import Faq from "./public/pages/Faq";

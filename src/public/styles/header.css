@@ -662,8 +662,60 @@ section {
     margin-top: 20px;
     margin-bottom: 50px;
 }
+
 .custom-pagination .MuiPaginationItem-root.Mui-selected {
     background-color: #3C8084 !important;
     color: white !important;
 }
 
+/*//////////////////////////////////////*/
+/*LOGIN*/
+/*////////////////////////////////////////*/
+
+.login {
+    display: flex;
+}
+
+.background {
+    background-image: url(../../img/login.png);
+    object-fit: fill;
+    /*height: 507px;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50% !important;
+    height: calc(100vh - (2em + 32px)) !important;
+    color: white;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.header-background {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+.header-background2 {
+    margin-left: 50px;
+    margin-bottom: 60px;
+}
+
+.background-desc {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.withIcon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+.icon-check {
+    fill: orange !important;
+}
