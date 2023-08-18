@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {TextField, createTheme, ThemeProvider, Grid, Paper, styled} from "@mui/material";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -38,8 +38,10 @@ const theme = createTheme({
 
 const LoginInput = () => {
 
-  const onChange = ()=> {
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
 
+  const onChange = ()=> {
+    setIsCaptchaVerified(true);
   }
 
 
@@ -76,7 +78,15 @@ const LoginInput = () => {
           <div className="grid-but">
             <Grid className="grid-button" container spacing={3}>
               <Grid item xs={12}>
-                <Item sx={{color: "darkgray", backgroundColor: "lightgray"}}>Next</Item>
+                <Item
+                  sx={{
+                    color: isCaptchaVerified ? "white" : "darkgray", // Change color based on verification
+                    backgroundColor: isCaptchaVerified ? "#3C8084" : "lightgray", // Change background color based on verification
+                    cursor: isCaptchaVerified ? "pointer" : "default", // Change cursor based on verification
+                }}
+                >
+                  Next
+                </Item>
               </Grid>
             </Grid>
           </div>
