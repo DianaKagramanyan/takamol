@@ -671,9 +671,10 @@ section {
 /*//////////////////////////////////////*/
 /*LOGIN*/
 /*////////////////////////////////////////*/
-
 .login {
     display: flex;
+    box-sizing: border-box;
+    /*justify-content: space-between;*/
 }
 
 .background {
@@ -719,3 +720,76 @@ section {
 .icon-check {
     fill: orange !important;
 }
+
+/*/////////////////////////*/
+/*LOGIN*/
+/*/////////////////////////*/
+
+.tabs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-login {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    color: #14415A;
+    font-size: 24px;
+    font-weight: 550;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 70px;
+    margin-left: 120px;
+    border: 1px solid black;
+    /*!*margin: 11px 0px 0px;*!*/
+    padding: 0px 12px;
+}
+.login-input {
+    display: flex;
+    flex-direction: column;
+}
+.log-input {
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    margin-bottom: 20px;
+    width: 504px;
+    height: 56px;
+}
+
+.after-captcha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-but {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.grid-button {
+    width: 400px !important;
+    height: 61px !important;
+}
+
+.small-text {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.small-links {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin-top: 8px;
+    color: #147e82;
+    font-size: 14px;
+}
+
+

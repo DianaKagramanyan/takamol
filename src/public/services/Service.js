@@ -87,7 +87,6 @@ const Service = () => {
                 <div>
                   <AllCards/>
                 </div>
-
               </div>
           }
         </div>

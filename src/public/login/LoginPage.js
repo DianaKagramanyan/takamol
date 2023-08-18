@@ -1,9 +1,11 @@
 import React from 'react';
+import LoginTabs from "./LoginTabs";
 
 const LoginPage = () => {
   return (
-    <div>
-      login
+    <div className="loginPage">
+      <div className="header-login">Login</div>
+      <LoginTabs/>
     </div>
   );
 };
