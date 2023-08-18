@@ -59,7 +59,7 @@ const LoginInput = () => {
 
 
           <div>CAPTCHA</div>
-          <div className="small-links">Forgot you password</div>
+          <div className="small-links">Forgot you password?</div>
           <div className="grid-but">
             <Grid className="grid-button" container spacing={3}>
               <Grid item xs={12}>
@@ -68,7 +68,7 @@ const LoginInput = () => {
             </Grid>
           </div>
 
-          <div className="small-text">You do not have an account on the platform?</div>
+          <div className="small-text">Don't have an account on the platform?</div>
           <div className="small-links">Create a new account</div>
           <div className="small-links">privacy policy</div>
         </div>
