@@ -8,6 +8,7 @@ import Registration from "./public/pages/Registration";
 import './public/styles/header.css';
 import Home from "./public/pages/Home";
 import About from "./public/pages/About";
+import ForgetPassword from "./public/pages/ForgetPassword";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/serviceDescription" element={<ServiceDescription/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Registration/>}/>
+        <Route path="/forgetpassword" element={<ForgetPassword/>}/>
       </Routes>
     </div>
   );

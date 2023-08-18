@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {TextField, createTheme, ThemeProvider, Grid, Paper, styled} from "@mui/material";
 import ReCAPTCHA from "react-google-recaptcha";
+import {Link} from "react-router-dom";
 
 const Item = styled(Paper)(({theme}) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -40,7 +41,7 @@ const LoginInput = () => {
 
   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
 
-  const onChange = ()=> {
+  const onChange = () => {
     setIsCaptchaVerified(true);
   }
 
@@ -74,7 +75,10 @@ const LoginInput = () => {
             />
           </div>
 
-          <div className="small-links">Forgot you password?</div>
+          <Link to="/forgetpassword" style={{textDecoration: 'none'}}>
+            <div className="small-links">Forgot you password?</div>
+          </Link>
+
           <div className="grid-but">
             <Grid className="grid-button" container spacing={3}>
               <Grid item xs={12}>
@@ -83,7 +87,7 @@ const LoginInput = () => {
                     color: isCaptchaVerified ? "white" : "darkgray", // Change color based on verification
                     backgroundColor: isCaptchaVerified ? "#3C8084" : "lightgray", // Change background color based on verification
                     cursor: isCaptchaVerified ? "pointer" : "default", // Change cursor based on verification
-                }}
+                  }}
                 >
                   Next
                 </Item>
@@ -92,8 +96,19 @@ const LoginInput = () => {
           </div>
 
           <div className="small-text">Don't have an account on the platform?</div>
-          <div className="small-links">Create a new account</div>
-          <div className="small-links">privacy policy</div>
+
+          <Link to="/register" style={{textDecoration: 'none'}}>
+            <div className="small-links">Create a new account</div>
+          </Link>
+
+
+          <Link
+            to="https://www.hrsd.gov.sa/ar/ministry/about-ministry/policies-strategies/policies/privacy-policy-and-terms-use"
+            target="_blank"
+            style={{textDecoration: 'none'}}
+          >
+            <div className="small-links">privacy policy</div>
+          </Link>
         </div>
 
       </div>
