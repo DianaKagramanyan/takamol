@@ -684,7 +684,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     width: 50% !important;
-    height: calc(100vh - (2em + 32px)) !important;
+    height: calc(100vh - 2em) !important;
     color: white;
     margin-top: 70px;
     display: flex;
@@ -736,8 +736,8 @@ section {
 .header-login {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     color: #14415A;
-    font-size: 24px;
-    font-weight: 550;
+    font-size: 26px;
+    font-weight: 540;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -749,8 +749,6 @@ section {
     justify-content: flex-start;
     margin-top: 70px;
     margin-left: 120px;
-    border: 1px solid black;
-    /*!*margin: 11px 0px 0px;*!*/
     padding: 0px 12px;
 }
 .login-input {

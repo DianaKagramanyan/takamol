@@ -1,5 +1,6 @@
 import React from 'react';
 import {TextField, createTheme, ThemeProvider, Grid, Paper, styled} from "@mui/material";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Item = styled(Paper)(({theme}) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -36,6 +37,12 @@ const theme = createTheme({
 });
 
 const LoginInput = () => {
+
+  const onChange = ()=> {
+
+  }
+
+
   return (
     <ThemeProvider theme={theme}>
       <div>
@@ -58,12 +65,18 @@ const LoginInput = () => {
         <div className="after-captcha">
 
 
-          <div>CAPTCHA</div>
+          <div>
+            <ReCAPTCHA
+              sitekey="6Lfoe7gnAAAAAMlBJPyFfwY3VZssC_r2rQGWhUN0"
+              onChange={onChange}
+            />
+          </div>
+
           <div className="small-links">Forgot you password?</div>
           <div className="grid-but">
             <Grid className="grid-button" container spacing={3}>
               <Grid item xs={12}>
-                <Item>Next</Item>
+                <Item sx={{color: "darkgray", backgroundColor: "lightgray"}}>Next</Item>
               </Grid>
             </Grid>
           </div>
