@@ -4,6 +4,7 @@ import Form from "../help/Form";
 import Questions from "../help/Questions";
 import UserCards from "../help/UserCards";
 import FinalForm from "../help/FinalForm";
+import Footer from "../homepage/components/footer/Footer";
 
 const Faq = () => {
   return (
@@ -13,6 +14,7 @@ const Faq = () => {
       {/*<FinalForm/>*/}
       <Questions/>
       <UserCards/>
+      <Footer/>
     </div>
   );
 };

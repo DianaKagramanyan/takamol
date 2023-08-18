@@ -11,7 +11,6 @@ import Home from "./public/pages/Home";
 import About from "./public/pages/About";
 
 
-
 function App() {
   return (
     <div>
@@ -26,7 +25,6 @@ function App() {
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Registration/>}/>
       </Routes>
-      <Footer/>
     </div>
   );
 }
