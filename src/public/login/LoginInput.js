@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import {TextField, createTheme, ThemeProvider, Grid, Paper, styled} from "@mui/material";
+import {TextField, Grid, Paper, styled} from "@mui/material";
 import ReCAPTCHA from "react-google-recaptcha";
 import {Link} from "react-router-dom";
+import {createTheme, ThemeProvider} from "@mui/material/styles";
 
 const Item = styled(Paper)(({theme}) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -11,31 +12,31 @@ const Item = styled(Paper)(({theme}) => ({
   color: theme.palette.text.secondary,
 }));
 
-const theme = createTheme({
-  components: {
-    MuiOutlinedInput: {
-      styleOverrides: {
-        root: {
-          '&:hover $notchedOutline': {
-            borderColor: 'green',
-          },
-          '&$focused $notchedOutline': {
-            borderColor: 'green',
-          },
-        },
-      },
-    },
-    MuiInputLabel: {
-      styleOverrides: {
-        root: {
-          '&$focused': {
-            color: 'green',
-          },
-        },
-      },
-    },
-  },
-});
+// const theme = createTheme({
+//   components: {
+//     MuiOutlinedInput: {
+//       styleOverrides: {
+//         root: {
+//           '&:hover $notchedOutline': {
+//             borderColor: 'green',
+//           },
+//           '&$focused $notchedOutline': {
+//             borderColor: 'green',
+//           },
+//         },
+//       },
+//     },
+//     MuiInputLabel: {
+//       styleOverrides: {
+//         root: {
+//           '&$focused': {
+//             color: 'green',
+//           },
+//         },
+//       },
+//     },
+//   },
+// });
 
 const LoginInput = () => {
 
@@ -47,7 +48,7 @@ const LoginInput = () => {
 
 
   return (
-    <ThemeProvider theme={theme}>
+    // <ThemeProvider theme={theme}>
       <div>
         <div className="login-input">
           <div className="log-input">
@@ -112,7 +113,7 @@ const LoginInput = () => {
         </div>
 
       </div>
-    </ThemeProvider>
+     // </ThemeProvider>
   );
 };
 

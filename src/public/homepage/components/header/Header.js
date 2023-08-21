@@ -11,7 +11,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 import {logo} from "../../../../img";
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import {useState} from "react";
@@ -21,7 +21,11 @@ const pages = ['Main', 'Our Services', 'About', 'Help'];
 function ResponsiveAppBar() {
   //change nav color while scrolling:
   const [color, setColor] = useState(false);
+  const location = useLocation();
   const changeColor = () => {
+    // if (location.pathname !== "Main") {
+    //   return;
+    // }
     if (window.scrollY >= 10) {
       setColor(true)
     } else {

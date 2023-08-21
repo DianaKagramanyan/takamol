@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
-import {Grid, Paper, Radio, styled} from "@mui/material";
+import {FormControl, FormControlLabel, FormLabel, Grid, Paper, Radio, RadioGroup, styled} from "@mui/material";
 import {Link} from "react-router-dom";
 
 const Item = styled(Paper)(({theme}) => ({
@@ -22,11 +22,11 @@ const steps = [
 ];
 
 export default function HorizontalLinearAlternativeLabelStepper() {
-  const [selectedValue, setSelectedValue] = React.useState('a');
-
-  const handleChange = (event) => {
-    setSelectedValue(event.target.value);
-  };
+  // const [selectedValue, setSelectedValue] = React.useState('a');
+  //
+  // const handleChange = (event) => {
+  //   setSelectedValue(event.target.value);
+  // };
 
 
   return (
@@ -49,28 +49,24 @@ export default function HorizontalLinearAlternativeLabelStepper() {
 
       <div>
 
-        <div className="nationality">* nationality</div>
         <div className="radio-buttons">
-          <Radio
-            checked={selectedValue === 'a'}
-            onChange={handleChange}
-            value="a"
-            name="radio-buttons"
-            inputProps={{'aria-label': 'A'}}
-          />
-          <Radio
-            checked={selectedValue === 'b'}
-            onChange={handleChange}
-            value="b"
-            name="radio-buttons"
-            inputProps={{'aria-label': 'B'}}
-          />
+          <FormControl>
+            <FormLabel className="nationality" id="demo-row-radio-buttons-group-label">* nationality</FormLabel>
+            <RadioGroup
+              row
+              aria-labelledby="demo-row-radio-buttons-group-label"
+              name="row-radio-buttons-group"
+            >
+              <FormControlLabel value="female" control={<Radio/>} label="Saudi"/>
+              <FormControlLabel value="male" control={<Radio/>} label="Non-Saudi"/>
+            </RadioGroup>
+          </FormControl>
         </div>
 
 
         <Grid container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
           <Grid item xs={6}>
-            <Item sx={{color: "white", backgroundColor:"#3C8084"}}>Next</Item>
+            <Item sx={{color: "white", backgroundColor: "#3C8084"}}>Next</Item>
           </Grid>
           <Grid item xs={6}>
             <Item sx={{color: "red", border: ".5px solid red"}}>Cancel order</Item>

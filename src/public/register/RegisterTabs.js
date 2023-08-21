@@ -7,26 +7,13 @@ import Box from '@mui/material/Box';
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import RegisterSteps from "./RegisterSteps";
 
-
-
-const theme = createTheme({
-  components: {
-    MuiTabs: {
-      styleOverrides: {
-        indicator: {
-          backgroundColor: '#3C8084',
-        },
-      },
+export const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#3C8084'
     },
-    MuiTab: {
-      styleOverrides: {
-        root: {
-          color: '#6B778C',
-          '&.Mui-selected': {
-            color: '#3C8084',
-          },
-        },
-      },
+    secondary: {
+      main: '#6B778C'
     },
   },
 });
@@ -75,7 +62,7 @@ export default function RegisterTabs() {
     <ThemeProvider theme={theme}>
       <Box sx={{width: '100%'}}>
         <Box className="tabs-center"  sx={{borderBottom: 1, borderColor: 'divider'}}>
-          <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tabs  value={value} onChange={handleChange} aria-label="basic tabs example">
             <Tab label="My Family Center" {...a11yProps(0)} />
             <Tab label="Beneficiary" {...a11yProps(1)} />
           </Tabs>

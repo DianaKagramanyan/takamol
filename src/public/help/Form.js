@@ -6,6 +6,18 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import Button from "@mui/material/Button";
 import PlaceIcon from '@mui/icons-material/Place';
 import {TextField} from "@mui/material";
+import {createTheme} from "@mui/material/styles";
+
+export const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#3C8084'
+    },
+    secondary: {
+      main: '#6B778C'
+    },
+  },
+});
 
 
 const Form = () => {
