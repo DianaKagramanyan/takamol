@@ -13,6 +13,7 @@ import agencySoftware from './agencySoftware.png';
 import help from './help.png';
 import services from './services.png';
 import login from './login.png';
+import createAccount from './createAccount.png';
 
 export {
   logo,
@@ -29,5 +30,6 @@ export {
   agencySoftware,
   help,
   services,
-  login
+  login,
+  createAccount
 }

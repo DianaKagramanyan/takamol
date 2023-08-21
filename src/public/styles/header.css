@@ -682,6 +682,7 @@ section {
     /*height: 507px;*/
     background-size: cover;
     background-repeat: no-repeat;
+    /*background-position: center center;*/
     width: 50% !important;
     height: calc(100vh - 2em) !important;
     color: white;
@@ -796,4 +797,24 @@ section {
     font-size: 14px;
 }
 
+/*//////////////////////////////////////*/
+/*CREATE AN ACCOUNT*/
+/*////////////////////////////////////////*/
+.background2 {
+    background-image: url(../../img/createAccount.png);
+    object-fit: fill;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50% !important;
+    height: calc(100vh - 2em) !important;
+    color: white;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+.orange-step {
+    color: orange !important;
+}
