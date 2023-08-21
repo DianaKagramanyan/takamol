@@ -3,7 +3,17 @@ import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
-import {FormControl, FormControlLabel, FormLabel, Grid, Paper, Radio, RadioGroup, styled} from "@mui/material";
+import {
+  FormControl,
+  FormControlLabel,
+  FormLabel,
+  Grid,
+  Paper,
+  Radio,
+  RadioGroup,
+  styled,
+  TextField
+} from "@mui/material";
 import {Link} from "react-router-dom";
 
 const Item = styled(Paper)(({theme}) => ({
@@ -31,47 +41,65 @@ export default function HorizontalLinearAlternativeLabelStepper() {
 
   return (
     <div className="step">
-
-      <Box sx={{width: '100%'}}>
-        <Stepper activeStep={0} alternativeLabel>
-          {steps.map((label) => (
-            <Step key={label}>
-              <StepLabel
-                StepIconProps={{
-                  classes: {active: 'orange-step', completed: 'orange-step'},
-                }}
-              >
-                {label}</StepLabel>
-            </Step>
-          ))}
-        </Stepper>
-      </Box>
+      <div className="step1">
+        <Box sx={{width: '100%'}}>
+          <Stepper activeStep={0} alternativeLabel>
+            {steps.map((label) => (
+              <Step key={label}>
+                <StepLabel
+                  StepIconProps={{
+                    classes: {active: 'orange-step', completed: 'orange-step'},
+                  }}
+                >
+                  {label}</StepLabel>
+              </Step>
+            ))}
+          </Stepper>
+        </Box>
+      </div>
 
       <div>
 
-        <div className="radio-buttons">
-          <FormControl>
-            <FormLabel className="nationality" id="demo-row-radio-buttons-group-label">* nationality</FormLabel>
-            <RadioGroup
-              row
-              aria-labelledby="demo-row-radio-buttons-group-label"
-              name="row-radio-buttons-group"
-            >
-              <FormControlLabel value="female" control={<Radio/>} label="Saudi"/>
-              <FormControlLabel value="male" control={<Radio/>} label="Non-Saudi"/>
-            </RadioGroup>
-          </FormControl>
+        {/*<div className="radio-buttons">*/}
+        {/*  <FormControl>*/}
+        {/*    <FormLabel className="nationality" id="demo-row-radio-buttons-group-label">* nationality</FormLabel>*/}
+        {/*    <RadioGroup*/}
+        {/*      row*/}
+        {/*      aria-labelledby="demo-row-radio-buttons-group-label"*/}
+        {/*      name="row-radio-buttons-group"*/}
+        {/*    >*/}
+        {/*      <FormControlLabel value="female" control={<Radio/>} label="Saudi"/>*/}
+        {/*      <FormControlLabel value="male" control={<Radio/>} label="Non-Saudi"/>*/}
+        {/*    </RadioGroup>*/}
+        {/*  </FormControl>*/}
+        {/*</div>*/}
+
+        <div className="login-input">
+          <div className="log-input">
+            <TextField
+              id="outlined-basic"
+              label="* Email"
+              variant="outlined"/>
+          </div>
+
+          <div className="log-input">
+            <TextField
+              id="outlined-basic"
+              label="* password"
+              variant="outlined"/>
+          </div>
         </div>
 
 
-        <Grid container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
-          <Grid item xs={6}>
-            <Item sx={{color: "white", backgroundColor: "#3C8084"}}>Next</Item>
+          <Grid className="two-Buttons" container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
+            <Grid item xs={6}>
+              <Item sx={{color: "white", backgroundColor: "#3C8084"}}>Next</Item>
+            </Grid>
+            <Grid item xs={6}>
+              <Item sx={{color: "red", border: ".5px solid red"}}>Cancel order</Item>
+            </Grid>
           </Grid>
-          <Grid item xs={6}>
-            <Item sx={{color: "red", border: ".5px solid red"}}>Cancel order</Item>
-          </Grid>
-        </Grid>
+
 
       </div>
 
