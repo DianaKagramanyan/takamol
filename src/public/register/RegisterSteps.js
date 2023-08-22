@@ -3,17 +3,7 @@ import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
-import {
-  FormControl,
-  FormControlLabel,
-  FormLabel,
-  Grid,
-  Paper,
-  Radio,
-  RadioGroup,
-  styled,
-  TextField
-} from "@mui/material";
+import {Grid, Paper, styled, TextField} from "@mui/material";
 import {Link} from "react-router-dom";
 
 const Item = styled(Paper)(({theme}) => ({
@@ -32,12 +22,6 @@ const steps = [
 ];
 
 export default function HorizontalLinearAlternativeLabelStepper() {
-  // const [selectedValue, setSelectedValue] = React.useState('a');
-  //
-  // const handleChange = (event) => {
-  //   setSelectedValue(event.target.value);
-  // };
-
 
   return (
     <div className="step">
@@ -59,20 +43,6 @@ export default function HorizontalLinearAlternativeLabelStepper() {
       </div>
 
       <div>
-
-        {/*<div className="radio-buttons">*/}
-        {/*  <FormControl>*/}
-        {/*    <FormLabel className="nationality" id="demo-row-radio-buttons-group-label">* nationality</FormLabel>*/}
-        {/*    <RadioGroup*/}
-        {/*      row*/}
-        {/*      aria-labelledby="demo-row-radio-buttons-group-label"*/}
-        {/*      name="row-radio-buttons-group"*/}
-        {/*    >*/}
-        {/*      <FormControlLabel value="female" control={<Radio/>} label="Saudi"/>*/}
-        {/*      <FormControlLabel value="male" control={<Radio/>} label="Non-Saudi"/>*/}
-        {/*    </RadioGroup>*/}
-        {/*  </FormControl>*/}
-        {/*</div>*/}
 
         <div className="login-input">
           <div className="log-input">

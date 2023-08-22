@@ -13,16 +13,19 @@ export default function CenterServices({item}) {
       <div className="cardS">
         <Card className="cardService" sx={{minWidth: 275}}>
           <CardContent className="cardService">
-            <div className="icon"  >
-              {img }
+            <div className="icon">
+              {img}
             </div>
             <Typography className="name1" variant="body2">
               {title}
             </Typography>
           </CardContent>
           <CardActions>
-            <Button sx={{color: " #3C8084", border: ".5px solid #3C8084"}} variant="outlined" size="small" size="small">GO
-              TO THE SERVICE</Button>
+            <Button
+              sx={{color: " #3C8084", border: ".5px solid #3C8084"}}
+              variant="outlined"
+              size="small">
+              GO TO THE SERVICE</Button>
           </CardActions>
         </Card>
       </div>
