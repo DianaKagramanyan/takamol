@@ -27,7 +27,7 @@ const LoginInput = () => {
         <div className="log-input">
           <TextField
             id="outlined-basic"
-            label="* ID/Iqama Number or Email"
+            label="* email"
             variant="outlined"/>
         </div>
 

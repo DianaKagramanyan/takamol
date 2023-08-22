@@ -48,7 +48,7 @@ export default function HorizontalLinearAlternativeLabelStepper() {
           <div className="log-input">
             <TextField
               id="outlined-basic"
-              label="* Email"
+              label="* email"
               variant="outlined"/>
           </div>
 
