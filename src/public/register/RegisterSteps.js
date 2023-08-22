@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
-import {Grid, Paper, styled, TextField} from "@mui/material";
+import {TextField, Grid, Paper, styled} from "@mui/material";
 import {Link} from "react-router-dom";
 
 const Item = styled(Paper)(({theme}) => ({

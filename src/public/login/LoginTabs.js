@@ -4,31 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import {createTheme, ThemeProvider} from '@mui/material/styles';
 import LoginInput from "./LoginInput";
-
-
-const theme = createTheme({
-  components: {
-    MuiTabs: {
-      styleOverrides: {
-        indicator: {
-          backgroundColor: '#3C8084',
-        },
-      },
-    },
-    MuiTab: {
-      styleOverrides: {
-        root: {
-          color: '#6B778C',
-          '&.Mui-selected': {
-            color: '#3C8084',
-          },
-        },
-      },
-    },
-  },
-});
 
 function CustomTabPanel(props) {
   const {children, value, index, ...other} = props;
@@ -71,25 +47,23 @@ export default function LoginTabs() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <Box sx={{width: '100%'}}>
-        <Box className="tabs-center"  sx={{borderBottom: 1, borderColor: 'divider'}}>
-          <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-            <Tab label="Service provider" {...a11yProps(0)} />
-            <Tab label="My Family Center" {...a11yProps(1)} />
-            <Tab label="Beneficiary" {...a11yProps(2)} />
-          </Tabs>
-        </Box>
-        <CustomTabPanel value={value} index={0}>
-          Item One
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={1}>
-          <LoginInput/>
-        </CustomTabPanel>
-        <CustomTabPanel value={value} index={2}>
-          Item Three
-        </CustomTabPanel>
+    <Box sx={{width: '100%'}}>
+      <Box className="tabs-center" sx={{borderBottom: 1, borderColor: 'divider'}}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab label="Service provider" {...a11yProps(0)} />
+          <Tab label="My Family Center" {...a11yProps(1)} />
+          <Tab label="Beneficiary" {...a11yProps(2)} />
+        </Tabs>
       </Box>
-    </ThemeProvider>
+      <CustomTabPanel value={value} index={0}>
+        Item One
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+        <LoginInput/>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+        Item Three
+      </CustomTabPanel>
+    </Box>
   );
 }
