@@ -1,10 +1,8 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import {TextField, Grid, Paper, styled} from "@mui/material";
+import {TextField, Grid, Paper, styled, Alert} from "@mui/material";
 import {Link} from "react-router-dom";
+import {useRef, useState} from "react";
+import {useAuth} from "../../contexts/AuthContext";
 
 const Item = styled(Paper)(({theme}) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -14,64 +12,83 @@ const Item = styled(Paper)(({theme}) => ({
   color: theme.palette.text.secondary,
 }));
 
-const steps = [
-  'Nationality and identity',
-  'Check Absher',
-  'personal information',
-  'verification phone',
-];
 
 export default function HorizontalLinearAlternativeLabelStepper() {
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const passwodConfirmRef = useRef();
+  const {signup} = useAuth();
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault()
+
+    if (passwordRef.current.value !==
+      passwodConfirmRef.current.value) {
+      return setError('Passwords do not match!')
+    }
+    try {
+      setError('');
+      setLoading(true);
+      await signup(emailRef.current.value, passwordRef.current.value)
+    } catch {
+      setError('Faoled to create an account')
+    }
+    setLoading(false)
+  }
+
 
   return (
     <div className="step">
-      <div className="step1">
-        <Box sx={{width: '100%'}}>
-          <Stepper activeStep={0} alternativeLabel>
-            {steps.map((label) => (
-              <Step key={label}>
-                <StepLabel
-                  StepIconProps={{
-                    classes: {active: 'orange-step', completed: 'orange-step'},
-                  }}
-                >
-                  {label}</StepLabel>
-              </Step>
-            ))}
-          </Stepper>
-        </Box>
-      </div>
 
-      <div>
+      {error && <Alert variant="danger">{error}</Alert>}
 
+      <form onSubmit={handleSubmit}>
         <div className="login-input">
           <div className="log-input">
             <TextField
               id="outlined-basic"
-              label="* email"
-              variant="outlined"/>
+              label="* Email"
+              variant="outlined"
+              inputRef={emailRef}
+
+            />
           </div>
 
           <div className="log-input">
             <TextField
               id="outlined-basic"
-              label="* password"
-              variant="outlined"/>
+              label="* Password"
+              variant="outlined"
+              inputRef={passwordRef}
+
+            />
+          </div>
+          <div className="log-input">
+            <TextField
+              id="outlined-basic"
+              label="* Password Confirmation"
+              variant="outlined"
+              inputRef={passwodConfirmRef}
+            />
           </div>
         </div>
 
 
-          <Grid className="two-Buttons" container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
-            <Grid item xs={6}>
-              <Item sx={{color: "white", backgroundColor: "#3C8084"}}>Next</Item>
-            </Grid>
-            <Grid item xs={6}>
-              <Item sx={{color: "red", border: ".5px solid red"}}>Cancel order</Item>
-            </Grid>
+        <Grid className="two-Buttons" container rowSpacing={1} columnSpacing={{xs: 1, sm: 2, md: 3}}>
+          <Grid item xs={6}>
+            <Item
+              disabled={loading}
+              sx={{color: "white", backgroundColor: "#3C8084"}}>Sign Up</Item>
           </Grid>
+          <Grid item xs={6}>
+            <Item sx={{color: "red", border: ".5px solid red"}}>Cancel order</Item>
+          </Grid>
+        </Grid>
 
 
-      </div>
+      </form>
 
 
       <div className="after">

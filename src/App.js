@@ -11,27 +11,29 @@ import About from "./public/pages/About";
 import ForgetPassword from "./public/pages/ForgetPassword";
 import {ThemeProvider} from "@mui/material/styles";
 import {theme} from "./public/register/RegisterTabs";
-
+import {AuthProvider} from "./contexts/AuthContext";
 
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <div>
-        <Header className="header"/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="Main" element={<Home/>}/>
-          <Route path="About" element={<About/>}/>
-          <Route path="Our Services" element={<Services/>}/>
-          <Route path="Help" element={<Faq/>}/>
-          <Route path="/serviceDescription" element={<ServiceDescription/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/register" element={<Registration/>}/>
-          <Route path="/forgetpassword" element={<ForgetPassword/>}/>
-        </Routes>
-      </div>
-    </ThemeProvider>
+    <AuthProvider>
+      <ThemeProvider theme={theme}>
+        <div>
+          <Header className="header"/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="Main" element={<Home/>}/>
+            <Route path="About" element={<About/>}/>
+            <Route path="Our Services" element={<Services/>}/>
+            <Route path="Help" element={<Faq/>}/>
+            <Route path="/serviceDescription" element={<ServiceDescription/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/register" element={<Registration/>}/>
+            <Route path="/forgetpassword" element={<ForgetPassword/>}/>
+          </Routes>
+        </div>
+      </ThemeProvider>
+     </AuthProvider>
   );
 }
 
