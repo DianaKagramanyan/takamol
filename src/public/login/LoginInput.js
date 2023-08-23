@@ -18,19 +18,19 @@ const Item = styled(Paper)(({theme}) => ({
 const LoginInput = () => {
 
   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
 
-  const signIn = (e) => {
-    e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
-      })
-      .catch((error) => {
-        console.log(error);
-      })
-  }
+  // const signIn = (e) => {
+  //   e.preventDefault();
+  //   signInWithEmailAndPassword(auth, email, password)
+  //     .then((userCredential) => {
+  //       console.log(userCredential);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     })
+  // }
 
   const onCaptchaChange = () => {
     setIsCaptchaVerified(true);
@@ -39,38 +39,38 @@ const LoginInput = () => {
 
   return (
 
-    <Box>
-      <Grid onSubmit={signIn} container spacing={2} className="login-input">
-        <Grid item xs={12} sm={6} className="log-input">
+    <Box className="step">
+      <Box className="login-input">
+        <Box className="log-input">
           <TextField
             // id="outlined-basic"
             label="* email"
             variant="outlined"
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            // type="email"
+            // value={email}
+            // onChange={(e) => setEmail(e.target.value)}
           />
-        </Grid>
+        </Box>
 
-        <Grid item xs={12} sm={6} className="log-input">
+        <Box className="log-input">
           <TextField
             // id="outlined-basic"
             label="* password"
             variant="outlined"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            // type="password"
+            // value={password}
+            // onChange={(e) => setPassword(e.target.value)}
           />
-        </Grid>
-      </Grid>
-
-      {/*<div className="after-captcha">*/}
+        </Box>
+      </Box>
 
 
-      <ReCAPTCHA
-        sitekey="6Lfoe7gnAAAAAMlBJPyFfwY3VZssC_r2rQGWhUN0"
-        onChange={onCaptchaChange}
-      />
+      <Box>
+        <ReCAPTCHA
+          sitekey="6Lfoe7gnAAAAAMlBJPyFfwY3VZssC_r2rQGWhUN0"
+          onChange={onCaptchaChange}
+        />
+      </Box>
 
 
       <Link to="/forgetpassword" style={{textDecoration: 'none'}}>
@@ -79,7 +79,7 @@ const LoginInput = () => {
 
       <Grid className="grid-but">
 
-        <Grid className="grid-button" container spacing={3}>
+        <Grid className="grid-button">
           <Grid item xs={12}>
             <Item
               sx={{
@@ -111,8 +111,6 @@ const LoginInput = () => {
       >
         <Typography className="small-links">privacy policy</Typography>
       </Link>
-      {/*</div>*/}
-
 
     </Box>
 

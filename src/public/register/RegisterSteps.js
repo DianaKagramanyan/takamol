@@ -18,7 +18,7 @@ export default function HorizontalLinearAlternativeLabelStepper() {
 
 
   return (
-    <Paper className="step">
+    <Box className="step">
       <Box className="login-input">
         <Box className="log-input">
           <TextField
@@ -40,7 +40,6 @@ export default function HorizontalLinearAlternativeLabelStepper() {
             id="outlined-basic"
             label="* Password Confirmation"
             variant="outlined"
-
           />
         </Box>
       </Box>
@@ -74,7 +73,7 @@ export default function HorizontalLinearAlternativeLabelStepper() {
           <Typography className="small-links">sign in</Typography>
         </Link>
       </Box>
-    </Paper>
+    </Box>
 
 
   );
