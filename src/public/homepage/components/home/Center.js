@@ -51,11 +51,11 @@ const Center = () => {
         <h1 className="header2">
           Center services
         </h1>
-        <p className="description2">
+        <div className="description2">
           This platform provides a set of electronic services to improve
           and facilitate procedures related to private rehabilitation
           centers for the beneficiaries and owners of the centers
-        </p>
+        </div>
 
         <Link to="/Our Services" style={{textDecoration: 'none'}}>
           <Button sx={{color: "white", backgroundColor: "rgb(60, 128, 132)"}}

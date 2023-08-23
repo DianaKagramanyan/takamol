@@ -10,11 +10,11 @@ const Help = () => {
         </div>
         <div>
           <h1 className="header-about">Help</h1>
-          <p className="about-description">
+          <div className="about-description">
             Need help with one of our programs or services? We are pleased to serve you, contact us
             for assistance or to answer your inquiries by filling out the special form or visiting
             us at the support services office
-          </p>
+          </div>
         </div>
       </div>
     </div>

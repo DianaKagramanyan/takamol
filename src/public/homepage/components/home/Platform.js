@@ -15,11 +15,11 @@ const Platform = () => {
         <h1 className="header1">
           Social rehabilitation and guidance platform
         </h1>
-        <p className="description">
+        <div className="description">
           The platform serves the groups most dear to our hearts, including people
           with disabilities, the elderly, and orphans. It also helps our partners
           from rehabilitation centers to provide services that meet their needs
-        </p>
+        </div>
 
         <div className='button'>
           <div className='button-out'>

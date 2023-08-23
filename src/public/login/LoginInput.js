@@ -2,6 +2,11 @@ import React, {useState} from 'react';
 import {TextField, Grid, Paper, styled} from "@mui/material";
 import ReCAPTCHA from "react-google-recaptcha";
 import {Link} from "react-router-dom";
+import {auth} from "../../firebase";
+import {signInWithEmailAndPassword} from "firebase/auth";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+
 
 const Item = styled(Paper)(({theme}) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -13,81 +18,107 @@ const Item = styled(Paper)(({theme}) => ({
 const LoginInput = () => {
 
   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
-  const onChange = () => {
+  const signIn = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        console.log(userCredential);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+  }
+
+  const onCaptchaChange = () => {
     setIsCaptchaVerified(true);
   }
 
 
   return (
 
-    <div>
-
-      <div className="login-input">
-        <div className="log-input">
+    <Box>
+      <Grid onSubmit={signIn} container spacing={2} className="login-input">
+        <Grid item xs={12} sm={6} className="log-input">
           <TextField
             id="outlined-basic"
             label="* email"
-            variant="outlined"/>
-        </div>
+            variant="outlined"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </Grid>
 
-        <div className="log-input">
+        <Grid item xs={12} sm={6} className="log-input">
           <TextField
             id="outlined-basic"
             label="* password"
-            variant="outlined"/>
-        </div>
-      </div>
-
-      <div className="after-captcha">
-
-
-        <div>
-          <ReCAPTCHA
-            sitekey="6Lfoe7gnAAAAAMlBJPyFfwY3VZssC_r2rQGWhUN0"
-            onChange={onChange}
+            variant="outlined"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
-        </div>
+        </Grid>
+      </Grid>
 
-        <Link to="/forgetpassword" style={{textDecoration: 'none'}}>
-          <div className="small-links">Forgot you password?</div>
-        </Link>
+      {/*<div className="after-captcha">*/}
 
-        <div className="grid-but">
-          <Grid className="grid-button" container spacing={3}>
-            <Grid item xs={12}>
-              <Item
-                sx={{
-                  color: isCaptchaVerified ? "white" : "darkgray", // Change color based on verification
-                  backgroundColor: isCaptchaVerified ? "#3C8084" : "lightgray", // Change background color based on verification
-                  cursor: isCaptchaVerified ? "pointer" : "default", // Change cursor based on verification
-                }}
-              >
-                Next
-              </Item>
-            </Grid>
+
+      <ReCAPTCHA
+        sitekey="6Lfoe7gnAAAAAMlBJPyFfwY3VZssC_r2rQGWhUN0"
+        onChange={onCaptchaChange}
+      />
+
+
+      <Link to="/forgetpassword" style={{textDecoration: 'none'}}>
+        <Typography className="small-links">Forgot you password?</Typography>
+      </Link>
+
+      <Grid className="grid-but">
+
+        <Grid className="grid-button" container spacing={3}>
+          <Grid item xs={12}>
+            <Item
+              sx={{
+                color: isCaptchaVerified ? "white" : "darkgray", // Change color based on verification
+                backgroundColor: isCaptchaVerified ? "#3C8084" : "lightgray", // Change background color based on verification
+                cursor: isCaptchaVerified ? "pointer" : "default", // Change cursor based on verification
+              }}
+              type="submit"
+              fullWidth
+            >
+              Next
+            </Item>
           </Grid>
-        </div>
+        </Grid>
 
-        <div className="small-text">Don't have an account on the platform?</div>
-
-        <Link to="/register" style={{textDecoration: 'none'}}>
-          <div className="small-links">Create a new account</div>
-        </Link>
+      </Grid>
 
 
-        <Link
-          to="https://www.hrsd.gov.sa/ar/ministry/about-ministry/policies-strategies/policies/privacy-policy-and-terms-use"
-          target="_blank"
-          style={{textDecoration: 'none'}}
-        >
-          <div className="small-links">privacy policy</div>
-        </Link>
-      </div>
+      <Typography className="small-text">Don't have an account on the platform?</Typography>
 
-    </div>
+      <Link to="/register" style={{textDecoration: 'none'}}>
+        <Typography className="small-links">Create a new account</Typography>
+      </Link>
 
-  );
+
+      <Link
+        to="https://www.hrsd.gov.sa/ar/ministry/about-ministry/policies-strategies/policies/privacy-policy-and-terms-use"
+        target="_blank"
+        style={{textDecoration: 'none'}}
+      >
+        <Typography className="small-links">privacy policy</Typography>
+      </Link>
+      {/*</div>*/}
+
+
+    </Box>
+
+  )
+    ;
 };
 
 export default LoginInput;

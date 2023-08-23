@@ -9,22 +9,33 @@ import './public/styles/header.css';
 import Home from "./public/pages/Home";
 import About from "./public/pages/About";
 import ForgetPassword from "./public/pages/ForgetPassword";
-import {ThemeProvider} from "@mui/material/styles";
-import {theme} from "./public/register/RegisterTabs";
-import {AuthProvider} from "./contexts/AuthContext";
+import {createTheme, ThemeProvider} from "@mui/material/styles";
+// import {theme} from "./public/register/RegisterTabs";
+// import {AuthProvider} from "./contexts/AuthContext";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#3C8084'
+    },
+    secondary: {
+      main: '#6B778C'
+    },
+  },
+});
 
 
 function App() {
   return (
-    <AuthProvider>
+    // <AuthProvider>
       <ThemeProvider theme={theme}>
         <div>
           <Header className="header"/>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="Main" element={<Home/>}/>
-            <Route path="About" element={<About/>}/>
-            <Route path="Our Services" element={<Services/>}/>
+            <Route path="/Main" element={<Home/>}/>
+            <Route path="/About" element={<About/>}/>
+            <Route path="/Our Services" element={<Services/>}/>
             <Route path="Help" element={<Faq/>}/>
             <Route path="/serviceDescription" element={<ServiceDescription/>}/>
             <Route path="/login" element={<Login/>}/>
@@ -33,7 +44,7 @@ function App() {
           </Routes>
         </div>
       </ThemeProvider>
-     </AuthProvider>
+      // </AuthProvider>
   );
 }
 
