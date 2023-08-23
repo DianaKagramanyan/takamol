@@ -43,7 +43,7 @@ const LoginInput = () => {
       <Grid onSubmit={signIn} container spacing={2} className="login-input">
         <Grid item xs={12} sm={6} className="log-input">
           <TextField
-            id="outlined-basic"
+            // id="outlined-basic"
             label="* email"
             variant="outlined"
             type="email"
@@ -54,7 +54,7 @@ const LoginInput = () => {
 
         <Grid item xs={12} sm={6} className="log-input">
           <TextField
-            id="outlined-basic"
+            // id="outlined-basic"
             label="* password"
             variant="outlined"
             type="password"
@@ -88,7 +88,6 @@ const LoginInput = () => {
                 cursor: isCaptchaVerified ? "pointer" : "default", // Change cursor based on verification
               }}
               type="submit"
-              fullWidth
             >
               Next
             </Item>
