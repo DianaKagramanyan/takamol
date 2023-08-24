@@ -10,8 +10,10 @@ import Home from "./public/pages/Home";
 import About from "./public/pages/About";
 import ForgetPassword from "./public/pages/ForgetPassword";
 import {createTheme, ThemeProvider} from "@mui/material/styles";
-// import {theme} from "./public/register/RegisterTabs";
-// import {AuthProvider} from "./contexts/AuthContext";
+import Account from "./components/Account";
+import ProtectedRoute from "./components/ProtectedRoute";
+import {AuthContextProvider} from "./context/AuthContext";
+
 
 const theme = createTheme({
   palette: {
@@ -27,24 +29,29 @@ const theme = createTheme({
 
 function App() {
   return (
-    // <AuthProvider>
-      <ThemeProvider theme={theme}>
-        <div>
-          <Header className="header"/>
-          <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/Main" element={<Home/>}/>
-            <Route path="/About" element={<About/>}/>
-            <Route path="/Our Services" element={<Services/>}/>
-            <Route path="Help" element={<Faq/>}/>
-            <Route path="/serviceDescription" element={<ServiceDescription/>}/>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/register" element={<Registration/>}/>
-            <Route path="/forgetpassword" element={<ForgetPassword/>}/>
-          </Routes>
-        </div>
-      </ThemeProvider>
-      // </AuthProvider>
+    <AuthContextProvider>
+    <ThemeProvider theme={theme}>
+      <div>
+        <Header className="header"/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/Main" element={<Home/>}/>
+          <Route path="/About" element={<About/>}/>
+          <Route path="/Our Services" element={<Services/>}/>
+          <Route path="Help" element={<Faq/>}/>
+          <Route path="/serviceDescription" element={<ServiceDescription/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Registration/>}/>
+          <Route path="/forgetpassword" element={<ForgetPassword/>}/>
+          <Route path="/account" element={
+            <ProtectedRoute>
+              <Account/>
+            </ProtectedRoute>
+          }/>
+        </Routes>
+      </div>
+    </ThemeProvider>
+    </AuthContextProvider>
   );
 }
 

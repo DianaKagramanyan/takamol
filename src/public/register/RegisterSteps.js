@@ -16,13 +16,12 @@ const Item = styled(Paper)(({theme}) => ({
 
 export default function HorizontalLinearAlternativeLabelStepper() {
 
-
   return (
     <Box className="step">
       <Box className="login-input">
         <Box className="log-input">
           <TextField
-            id="outlined-basic"
+            // id="outlined-basic"
             label="* Email"
             variant="outlined"
           />
@@ -30,14 +29,14 @@ export default function HorizontalLinearAlternativeLabelStepper() {
 
         <Box className="log-input">
           <TextField
-            id="outlined-basic"
+            // id="outlined-basic"
             label="* Password"
             variant="outlined"
           />
         </Box>
         <Box className="log-input">
           <TextField
-            id="outlined-basic"
+            // id="outlined-basic"
             label="* Password Confirmation"
             variant="outlined"
           />
