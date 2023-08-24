@@ -1,15 +1,16 @@
 import React from 'react';
 import BackgroundRegister from "../register/BackgroundRegister";
-import CreateAnAccount from "../register/CreateAnAccount";
-import Test from "../test/Test";
 import Signup from "../../components/Signup";
+import CreateAnAccount from "../register/CreateAnAccount";
+import Signup2 from "../../components/Signup2";
 
 const Registration = () => {
   return (
     <div className="login">
      <BackgroundRegister/>
       {/*<CreateAnAccount/>*/}
-      <Signup/>
+      {/*<Signup/>*/}
+      <Signup2/>
 
     </div>
   );
