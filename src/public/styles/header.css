@@ -744,7 +744,8 @@ section {
     justify-content: flex-start;
     margin-top: 70px;
     margin-left: 120px;
-    padding: 0px 12px;
+    /*padding: 0px 12px;*/
+    padding: 24px;
 }
 
 .login-input {
