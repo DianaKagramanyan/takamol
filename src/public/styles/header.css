@@ -728,12 +728,6 @@ section {
 /*LOGIN*/
 /*/////////////////////////*/
 
-.tabs-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .header-login {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     color: #14415A;
@@ -768,33 +762,44 @@ section {
     width: 504px;
     height: 56px;
 }
-
-.after-captcha {
+.center-items {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.grid-but {
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
+/*.after-captcha {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
 
-.grid-button {
-    width: 400px !important;
-    height: 61px !important;
-}
+/*.grid-but {*/
+/*    margin-top: 50px;*/
+/*    margin-bottom: 80px;*/
+/*}*/
+
+/*.grid-button {*/
+/*    width: 400px !important;*/
+/*    height: 61px !important;*/
+/*}*/
 
 .small-text {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
+    margin-top: 14px;
 }
 
 .small-links {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     margin-top: 8px;
     color: #147e82;
-    font-size: 14px;
+    font-size: 10px;
+}
+.custom-button {
+    width: 100% !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /*//////////////////////////////////////*/

@@ -2,7 +2,7 @@ import React from 'react';
 import RegisterSteps from "./RegisterSteps";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Signup2 from "../../components/Signup2";
+import Signup from "../../components/Signup";
 
 
 const CreateAnAccount = () => {
@@ -12,7 +12,7 @@ const CreateAnAccount = () => {
       {/*  Create an account*/}
       {/*</Typography>*/}
       {/*<RegisterSteps />*/}
-      <Signup2/>
+      <Signup/>
     </Box>
   );
 };

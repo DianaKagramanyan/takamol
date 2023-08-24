@@ -1,12 +1,17 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { UserAuth } from '../context/AuthContext';
+import * as React from 'react';
+import {TextField, Grid, Paper, styled} from "@mui/material";
+import {Link, useNavigate} from "react-router-dom";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import {useState} from "react";
+import {UserAuth} from "../context/AuthContext";
+import Button from "@mui/material/Button";
 
-const Signup = () => {
+export default function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('')
-  const { createUser } = UserAuth();
+  const {createUser} = UserAuth();
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
@@ -22,37 +27,69 @@ const Signup = () => {
   };
 
   return (
-    <div >
-      <div className="loginPage">
-        <h1 >Create an account</h1>
-        <p >
-          Already have an account yet?{' '}
-          <Link to='/login' className='underline'>
-            Sign in.
-          </Link>
-        </p>
-      </div>
-      <form onSubmit={handleSubmit}>
-        <div >
-          <label >Email Address</label>
-          <input
-            onChange={(e) => setEmail(e.target.value)}
-            type='email'
-          />
-        </div>
-        <div>
-          <label >Password</label>
-          <input
-            onChange={(e) => setPassword(e.target.value)}
-            type='password'
-          />
-        </div>
-        <button >
-          Sign Up
-        </button>
-      </form>
-    </div>
-  );
-};
+    <Box className="loginPage">
+      <Typography variant="h4" className="header-login">
+        Create an account
+      </Typography>
+      <Box className="step">
+        <form className="center-items" onSubmit={handleSubmit}>
+          <Box className="login-input">
+            <Box className="log-input">
+              <TextField
+                label="* Email"
+                variant="outlined"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Box>
 
-export default Signup;
+            <Box className="log-input">
+              <TextField
+                label="* Password"
+                variant="outlined"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Box>
+          </Box>
+
+          <Box className="custom-button">
+
+            <Button
+              className="custom-button"
+              sx={{color: "white", backgroundColor: "#3C8084"}}
+              type="submit"
+            >
+              Sign Up
+            </Button>
+          </Box>
+
+
+        </form>
+
+
+        <Box className="after">
+          <Box className="small-text">
+            <Link
+              to="https://www.hrsd.gov.sa/ar/ministry/about-ministry/policies-strategies/policies/privacy-policy-and-terms-use"
+              target="_blank"
+              style={{textDecoration: 'none'}}
+            >
+              <Typography className="small-links">privacy policy</Typography>
+            </Link>
+          </Box>
+
+          <Box className="small-text">
+            <Typography className="small-text2">Do you have an account on the platform?</Typography>
+          </Box>
+
+          <Box className="small-text">
+            <Link to="/login" style={{textDecoration: 'none'}}>
+              <Typography className="small-links">sign in</Typography>
+            </Link>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
+  );
+}

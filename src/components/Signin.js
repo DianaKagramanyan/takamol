@@ -39,7 +39,7 @@ const SignIn = () => {
       </Typography>
 
       <Box className="step">
-        <form onSubmit={handleSubmit}> {/* Add onSubmit here */}
+        <form className="center-items" onSubmit={handleSubmit}> {/* Add onSubmit here */}
           <Box className="login-input">
             <Box className="log-input">
               <TextField
@@ -68,47 +68,51 @@ const SignIn = () => {
             />
           </Box>
 
+          <Box>
+            <Link to="/forgetpassword" style={{textDecoration: 'none'}}>
+              <Typography className="small-links">Forgot you password?</Typography>
+            </Link>
+          </Box>
 
-          <Link to="/forgetpassword" style={{textDecoration: 'none'}}>
-            <Typography className="small-links">Forgot you password?</Typography>
-          </Link>
+          <Box className="custom-button">
+            <Button
+              className="custom-button"
+              sx={{
+                color: isCaptchaVerified ? "white" : "darkgray", // Change color based on verification
+                backgroundColor: isCaptchaVerified ? "#3C8084" : "lightgray", // Change background color based on verification
+                cursor: isCaptchaVerified ? "pointer" : "default",// Change cursor based on verification
+              }}
+              type="submit"
+            >
+              Next
+            </Button>
+          </Box>
 
-          <Grid className="grid-but">
-
-            <Grid className="grid-button">
-              <Grid item xs={12}>
-                <Button
-                  sx={{
-                    color: isCaptchaVerified ? "white" : "darkgray", // Change color based on verification
-                    backgroundColor: isCaptchaVerified ? "#3C8084" : "lightgray", // Change background color based on verification
-                    cursor: isCaptchaVerified ? "pointer" : "default", // Change cursor based on verification
-                  }}
-                  className='button-out'
-                  variant="outlined"
-                  type="submit"
-                >
-                  Next
-                </Button>
-              </Grid>
-            </Grid>
-
-          </Grid>
 
         </form>
-        <Typography className="small-text">Don't have an account on the platform?</Typography>
+        <Box className="center-items">
 
-        <Link to="/register" style={{textDecoration: 'none'}}>
-          <Typography className="small-links">Create a new account</Typography>
-        </Link>
+          <Box className="small-text">
+            <Typography>Don't have an account on the platform?</Typography>
+          </Box>
 
+          <Box className="small-text">
+            <Link to="/register" style={{textDecoration: 'none'}}>
+              <Typography className="small-links">Create a new account</Typography>
+            </Link>
+          </Box>
 
-        <Link
-          to="https://www.hrsd.gov.sa/ar/ministry/about-ministry/policies-strategies/policies/privacy-policy-and-terms-use"
-          target="_blank"
-          style={{textDecoration: 'none'}}
-        >
-          <Typography className="small-links">privacy policy</Typography>
-        </Link>
+          <Box className="small-text">
+            <Link
+              to="https://www.hrsd.gov.sa/ar/ministry/about-ministry/policies-strategies/policies/privacy-policy-and-terms-use"
+              target="_blank"
+              style={{textDecoration: 'none'}}
+            >
+              <Typography className="small-links">privacy policy</Typography>
+            </Link>
+          </Box>
+
+        </Box>
 
       </Box>
     </Box>

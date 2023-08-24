@@ -1,12 +1,12 @@
 import React from 'react';
 import Background from "../login/Background";
-import Signin2 from "../../components/Signin";
+import Signin from "../../components/Signin";
 
 const Login = () => {
   return (
     <div className="login">
       <Background/>
-      <Signin2/>
+      <Signin/>
     </div>
   );
 };
