@@ -9,26 +9,27 @@ export default function CenterServices({item}) {
   const {img, title} = item;
 
   return (
-    <div className="servicesCards">
-      <div className="cardS">
-        <Card className="cardService" sx={{minWidth: 275}}>
-          <CardContent className="cardService">
+      <div className="userCard" >
+        <Card className="card-description"  sx={{minWidth: 275}}>
+          <CardContent className="cont">
             <div className="icon">
               {img}
             </div>
-            <Typography className="name1" variant="body2">
+            <Typography
+              className="title"
+              variant="body2">
               {title}
             </Typography>
           </CardContent>
-          <CardActions>
+          <CardActions className="button-download">
             <Button
-              sx={{color: " #3C8084", border: ".5px solid #3C8084"}}
+              className="button-download"
+              sx={{color: " #3C8084"}}
               variant="outlined"
-              size="small">
+            >
               GO TO THE SERVICE</Button>
           </CardActions>
         </Card>
       </div>
-    </div>
   );
 }

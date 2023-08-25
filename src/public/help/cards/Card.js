@@ -14,7 +14,6 @@ export default function BasicCard({item}) {
       <Card className="card-description" sx={{minWidth: 275}}>
         <CardContent className="cont">
           <DescriptionIcon
-            className="image-paper"
             sx={{fontSize: 100, color: "#147e82"}}/>
           <div className="title">
             <Typography

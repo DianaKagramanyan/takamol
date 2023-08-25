@@ -10,18 +10,10 @@ const Service = () => {
 
   const buttonStyles = {
     color: '#6B778C',
-    // borderBottom: '2px solid #6B778C',
-    // '&:hover': {
-    //   borderBottom: '1px solid #6B778C',
-    // },
   };
 
   const selectedButtonStyles = {
     color: '#3C8084',
-    // borderBottom: '1px solid #3C8084',
-    // '&:hover': {
-    //   borderBottom: '1px solid #3C8084',
-    // },
   };
 
 
@@ -53,7 +45,7 @@ const Service = () => {
                       variant="text"
                       style={buttonStyles}
                     >
-                      POSITIONS</Button>
+                      CENTERS</Button>
                   </div>
                   <div>
                     <Button
@@ -74,7 +66,7 @@ const Service = () => {
                     <Button
                       variant="text"
                       style={selectedButtonStyles}
-                    >POSITIONS</Button>
+                    >CENTERS</Button>
                   </div>
                   <div>
                     <Button

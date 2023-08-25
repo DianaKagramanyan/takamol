@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import cardServ from "./listOfCards";
-import CenterServices from "./CenterServices";
+import CenterServices2 from "./CenterServices";
 import {Pagination} from "@mui/material";
 
 const DisplayCard = () => {
@@ -15,13 +15,13 @@ const DisplayCard = () => {
   };
 
   return (
-    <div>
-      <div className="grid">
+    <div className="section-1">
+      <section>
         {
           records.map((item) =>
-            (<CenterServices key={item.id} item={item}/>
+            (<CenterServices2 key={item.id} item={item}/>
             ))}
-      </div>
+      </section>
 
       <div className="pagination-container">
         <Pagination

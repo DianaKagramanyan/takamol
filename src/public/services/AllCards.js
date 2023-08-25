@@ -3,8 +3,8 @@ import DisplayCard from "./DisplayCard";
 
 const AllCards = () => {
   return (
-    <div className="servicesCards">
-      <h2 className="headerServices">Center services</h2>
+    <div className="servicesCards2" >
+      <h2 className="headerServices" >Center services</h2>
       <DisplayCard/>
     </div>
   );

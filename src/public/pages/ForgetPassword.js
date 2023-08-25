@@ -57,16 +57,10 @@ const ForgetPassword = () => {
               Reset
             </Button>
           </Box>
-
-
         </form>
+
         <Box className="center-items">
-
-          <Box className="small-text">
-            <Typography>Don't have an account on the platform?</Typography>
-          </Box>
-
-          <Box className="small-text">
+            <Box className="small-text">
             <Link to="/login" style={{textDecoration: 'none'}}>
               <Typography className="small-links">Login</Typography>
             </Link>
