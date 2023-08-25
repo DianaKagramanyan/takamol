@@ -77,6 +77,7 @@ const SignIn = () => {
           <Box className="custom-button">
             <Button
               className="custom-button"
+              variant="contained"
               sx={{
                 color: isCaptchaVerified ? "white" : "darkgray", // Change color based on verification
                 backgroundColor: isCaptchaVerified ? "#3C8084" : "lightgray", // Change background color based on verification

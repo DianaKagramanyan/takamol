@@ -47,6 +47,7 @@ const ForgetPassword = () => {
           <Box className="custom-button">
             <Button
               className="custom-button"
+              variant="contained"
               sx={{
                 color: "white",
                 backgroundColor: "#3C8084",

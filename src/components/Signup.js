@@ -57,6 +57,7 @@ export default function Signup() {
 
             <Button
               className="custom-button"
+              variant="contained"
               sx={{color: "white", backgroundColor: "#3C8084"}}
               type="submit"
             >
