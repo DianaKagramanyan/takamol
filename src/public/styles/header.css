@@ -595,7 +595,8 @@ section {
     margin-left: -90px;
     padding: 20px;
 }
-.servicesCards2{
+
+.servicesCards2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -769,6 +770,7 @@ section {
     width: 504px;
     height: 56px;
 }
+
 .center-items {
     display: flex;
     flex-direction: column;
@@ -803,11 +805,13 @@ section {
     color: #147e82;
     font-size: 10px;
 }
+
 .custom-button {
     width: 100% !important;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 /*//////////////////////////////////////*/
 /*CREATE AN ACCOUNT*/
 /*////////////////////////////////////////*/
@@ -832,6 +836,7 @@ section {
 .step {
     margin-top: 30px;
 }
+
 .step1 {
     margin-bottom: 50px;
 }
@@ -867,3 +872,13 @@ section {
 /*//////////////////////////////////////*/
 /*DASHBOARD*/
 /*////////////////////////////////////////*/
+.drawer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.list-container {
+    padding: 14px;
+}
