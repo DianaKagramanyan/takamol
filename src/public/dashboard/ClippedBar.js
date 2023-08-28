@@ -62,10 +62,10 @@ export default function ClippedBar() {
       <Box component="main" sx={{flexGrow: 1, p: 3}}>
         <Toolbar/>
         <Typography paragraph>
-
+sdsadsa
         </Typography>
         <Typography paragraph>
-
+ssfsf
         </Typography>
       </Box>
     </Box>

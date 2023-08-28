@@ -2,7 +2,6 @@ import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import {UserAuth} from '../context/AuthContext';
 import HeaderDashboard from "../public/dashboard/HeaderDashboard";
-import SideBar from "../public/dashboard/SideBar";
 import ClippedBar from "../public/dashboard/ClippedBar";
 import Box from "@mui/material/Box";
 import {CssBaseline} from "@mui/material";
@@ -25,7 +24,6 @@ const Account = () => {
     <Box>
       <CssBaseline />
       <HeaderDashboard/>
-      {/*<SideBar/>*/}
       <ClippedBar/>
       <div className="loginPage">
         <h1>Account</h1>
