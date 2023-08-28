@@ -162,8 +162,9 @@ export default function HeaderDashboard() {
         sx={{
           backgroundColor: 'white',
           zIndex: 110,
+          height: '64px', // Adjust the height as needed
         }}>
-        <Toolbar>
+        <Toolbar >
           <IconButton
             size="large"
             edge="start"
@@ -177,7 +178,7 @@ export default function HeaderDashboard() {
             variant="h6"
             noWrap
             component="div"
-            sx={{display: {xs: 'none', sm: 'block', color: 'black'}, marginRight: '20px'}}
+            sx={{display: {xs: 'none', sm: 'block', color: 'black'}, marginRight: '20px', fontSize: '14px'}}
           >
             MAIN
           </Typography>
@@ -185,7 +186,7 @@ export default function HeaderDashboard() {
             variant="h6"
             noWrap
             component="div"
-            sx={{display: {xs: 'none', sm: 'block', color: 'black'}}}
+            sx={{display: {xs: 'none', sm: 'block', color: 'black', fontSize: '14px'}}}
           >
             HELP
           </Typography>
@@ -208,8 +209,6 @@ export default function HeaderDashboard() {
               aria-label="account of current user"
               aria-controls={menuId}
               aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color=""
             >
               <SettingsIcon sx={{color: '#3C8084'}}/>
             </IconButton>
