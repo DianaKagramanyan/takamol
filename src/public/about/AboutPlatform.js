@@ -1,11 +1,11 @@
 import React from 'react';
 import {aboutAgency, aboutPlatform, agencyGoals, agencySoftware} from "../../img";
+import Header from "../homepage/components/header/Header";
 
 
 const AboutPlatform = () => {
   return (
     <div>
-
       <div className="about-platform">
         <div>
           <img className="image-aboutPlatform" src={aboutPlatform} alt="aboutPlatform"/>

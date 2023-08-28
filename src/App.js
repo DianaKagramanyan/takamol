@@ -1,4 +1,3 @@
-import Header from "./public/homepage/components/header/Header";
 import {Route, Routes} from "react-router-dom";
 import Services from "./public/pages/Services";
 import Faq from "./public/pages/Faq";
@@ -32,7 +31,6 @@ function App() {
     <AuthContextProvider>
     <ThemeProvider theme={theme}>
       <div>
-        <Header className="header"/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/Main" element={<Home/>}/>

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {TextField} from "@mui/material";
+import {CssBaseline, Paper, TextField} from "@mui/material";
 import {Link} from "react-router-dom";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -27,48 +27,49 @@ const ForgetPassword = () => {
 
 
   return (
-    <Box className="loginPage">
-      <Typography variant="h4" className="header-login">
-        Reset your password
-      </Typography>
+      <Box className="loginPage">
+        <Typography variant="h4" className="header-login">
+          Reset your password
+        </Typography>
 
-      <Box className="step">
-        <form className="center-items" onSubmit={handleSubmit}> {/* Add onSubmit here */}
-          <Box className="login-input">
-            <Box className="log-input">
-              <TextField
-                label="* email"
-                variant="outlined"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+        <Box className="step">
+          <form className="center-items" onSubmit={handleSubmit}> {/* Add onSubmit here */}
+            <Box className="login-input">
+              <Box className="log-input">
+                <TextField
+                  label="* email"
+                  variant="outlined"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </Box>
             </Box>
-          </Box>
-          <Box className="custom-button">
-            <Button
-              className="custom-button"
-              variant="contained"
-              sx={{
-                color: "white",
-                backgroundColor: "#3C8084",
-                cursor: "pointer"
-              }}
-              type="submit"
-            >
-              Reset
-            </Button>
-          </Box>
-        </form>
+            <Box className="custom-button">
+              <Button
+                className="custom-button"
+                variant="contained"
+                sx={{
+                  color: "white",
+                  backgroundColor: "#3C8084",
+                  cursor: "pointer"
+                }}
+                type="submit"
+              >
+                Reset
+              </Button>
+            </Box>
+          </form>
 
-        <Box className="center-items">
+          <Box className="center-items">
             <Box className="small-text">
-            <Link to="/login" style={{textDecoration: 'none'}}>
-              <Typography className="small-links">Login</Typography>
-            </Link>
+              <Link to="/login" style={{textDecoration: 'none'}}>
+                <Typography className="small-links">Login</Typography>
+              </Link>
+            </Box>
           </Box>
         </Box>
       </Box>
-    </Box>
+
   );
 };
 
