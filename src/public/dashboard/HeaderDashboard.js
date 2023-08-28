@@ -16,6 +16,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import {logo} from "../../img";
+import {Link} from "react-router-dom";
 
 const Search = styled('div')(({theme}) => ({
   position: 'relative',
@@ -164,7 +165,7 @@ export default function HeaderDashboard() {
           zIndex: 110,
           height: '64px', // Adjust the height as needed
         }}>
-        <Toolbar >
+        <Toolbar>
           <IconButton
             size="large"
             edge="start"
@@ -180,7 +181,9 @@ export default function HeaderDashboard() {
             component="div"
             sx={{display: {xs: 'none', sm: 'block', color: 'black'}, marginRight: '20px', fontSize: '14px'}}
           >
-            MAIN
+            <Link to="/Main" style={{textDecoration: 'none', color: 'black'}}>
+              MAIN
+            </Link>
           </Typography>
           <Typography
             variant="h6"
@@ -188,7 +191,9 @@ export default function HeaderDashboard() {
             component="div"
             sx={{display: {xs: 'none', sm: 'block', color: 'black', fontSize: '14px'}}}
           >
-            HELP
+            <Link to="/Help" style={{textDecoration: 'none', color: 'black'}}>
+              HELP
+            </Link>
           </Typography>
           <Box sx={{flexGrow: 1}}/>
           <Box sx={{display: {xs: 'none', md: 'flex'}}}>
