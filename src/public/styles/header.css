@@ -882,3 +882,51 @@ section {
 .list-container {
     padding: 14px;
 }
+
+.list-item:hover {
+    background-color: rgba(60, 128, 132, 0.2);
+}
+
+.grid-container {
+    background-color: #F5F7F8;
+    width: 100%;
+    /*margin: 30px auto;*/
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 40px 100px 400px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.grid-header {
+    grid-column: 1/-1;
+}
+.grid-box1 {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
+}
+
+.grid-box2 {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
+}
+
+.grid-box3 {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
+}
+
+.grid-box4 {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
+}
+
+.grid-box5 {
+    background-color: white;
+    grid-column: 2/-1;
+    border-radius: 3px;
+    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
+}

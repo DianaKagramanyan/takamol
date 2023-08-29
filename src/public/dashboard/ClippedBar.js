@@ -14,6 +14,7 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import IconButton from "@mui/material/IconButton";
 import {logo} from "../../img";
+import ContentDashboard from "./dataPanel/ContentDashboard";
 
 
 const drawerWidth = 240;
@@ -48,10 +49,10 @@ export default function ClippedBar() {
               </IconButton>
             </Box>
 
-            <Box  sx={{overflow: 'auto'}}>
+            <Box sx={{overflow: 'auto'}}>
               <List className="list-container">
                 {['Data panel', 'Services', 'Positions', 'Requests', 'User guides'].map((text, index) => (
-                  <ListItem key={text} disablePadding>
+                  <ListItem className="list-item" key={text} disablePadding>
                     <ListItemButton>
                       <ListItemIcon>
                         {index % 2 === 0 ? <DesktopWindowsOutlinedIcon sx={{color: '#3C8084'}}/> :
@@ -71,7 +72,6 @@ export default function ClippedBar() {
               <IconButton
                 size="large"
                 edge="start"
-                color=""
                 aria-label="open drawer"
                 sx={{mr: 2}}
               >
@@ -85,18 +85,11 @@ export default function ClippedBar() {
             </Box>
           </Box>
         </Box>
-
-
       </Drawer>
-      {/*<Box component="main" sx={{flexGrow: 1, p: 3}}>*/}
-      {/*  <Toolbar/>*/}
-      {/*  <Typography paragraph>*/}
-      {/*    sdsadsa*/}
-      {/*  </Typography>*/}
-      {/*  <Typography paragraph>*/}
-      {/*    ssfsf*/}
-      {/*  </Typography>*/}
-      {/*</Box>*/}
+
+
+      <ContentDashboard/>
+
     </Box>
   );
 }
