@@ -903,7 +903,11 @@ section {
 .grid-box1 {
     background-color: white;
     border-radius: 3px;
-    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
+    box-shadow: 2px 4px 12px rgba(11,68,70, .25);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .grid-box2 {
