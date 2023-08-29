@@ -5,6 +5,7 @@ import HeaderDashboard from "../public/dashboard/HeaderDashboard";
 import ClippedBar from "../public/dashboard/ClippedBar";
 import Box from "@mui/material/Box";
 import {CssBaseline} from "@mui/material";
+import ContentDashboard from "../public/dashboard/dataPanel/ContentDashboard";
 
 const Account = () => {
   const {user, logout} = UserAuth();

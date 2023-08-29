@@ -12,6 +12,7 @@ import {createTheme, ThemeProvider} from "@mui/material/styles";
 import Account from "./components/Account";
 import ProtectedRoute from "./components/ProtectedRoute";
 import {AuthContextProvider} from "./context/AuthContext";
+import DashboardServices from "./public/pages/DashboardServices";
 
 
 const theme = createTheme({
@@ -46,6 +47,7 @@ function App() {
               <Account/>
             </ProtectedRoute>
           }/>
+          <Route path="/dashboardServices" element={<DashboardServices/>}/>
         </Routes>
       </div>
     </ThemeProvider>

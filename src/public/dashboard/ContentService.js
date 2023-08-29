@@ -14,13 +14,13 @@ import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import IconButton from "@mui/material/IconButton";
 import {logo} from "../../img";
-import ContentDashboard from "./dataPanel/ContentDashboard";
 import {Link} from "react-router-dom";
+import ContentCards from "./service/ContentCards";
 
 
 const drawerWidth = 240;
 
-export default function ClippedBar() {
+export default function ContentService() {
   return (
     <Box sx={{display: 'flex'}}>
       <CssBaseline/>
@@ -59,6 +59,32 @@ export default function ClippedBar() {
                         {index % 2 === 0 ? <DesktopWindowsOutlinedIcon sx={{color: '#3C8084', fontSize: "22px"}}/> :
                           <HomeOutlinedIcon sx={{color: '#3C8084', fontSize: "22px"}}/>}
                       </ListItemIcon>
+
+                      {/*<ListItemText>*/}
+                      {/*  <Typography variant="body2" sx={{fontSize: "14px", marginLeft: "-20px"}}>*/}
+                      {/*    {text}*/}
+                      {/*  </Typography>*/}
+                      {/*</ListItemText>*/}
+
+
+                      {/*{text === "Services" ? (*/}
+                      {/*  <ListItemText>*/}
+                      {/*    <Link*/}
+                      {/*      to="/dashboardServices"*/}
+                      {/*      style={{ textDecoration: "none", color: "inherit" }}*/}
+                      {/*    >*/}
+                      {/*      <Typography variant="body2" sx={{ fontSize: "14px", marginLeft: "-20px" }}>*/}
+                      {/*        {text}*/}
+                      {/*      </Typography>*/}
+                      {/*    </Link>*/}
+                      {/*  </ListItemText>*/}
+                      {/*) : (*/}
+                      {/*  <ListItemText>*/}
+                      {/*    <Typography variant="body2" sx={{ fontSize: "14px", marginLeft: "-20px" }}>*/}
+                      {/*      {text}*/}
+                      {/*    </Typography>*/}
+                      {/*  </ListItemText>*/}
+                      {/*)}*/}
 
                       {text === "Data panel" ? (
                         <ListItemText>
@@ -113,15 +139,15 @@ export default function ClippedBar() {
       </Drawer>
 
 
-      <Box component="main" sx={{flexGrow: 1}}>
+      {/*<Box component="main" sx={{flexGrow: 1, p: 3}}>*/}
       {/*  <Toolbar/>*/}
       {/*  <Typography paragraph>*/}
 
-      <ContentDashboard />
 
+      <ContentCards/>
       {/*  </Typography>*/}
 
-      </Box>
+      {/*</Box>*/}
 
     </Box>
   );

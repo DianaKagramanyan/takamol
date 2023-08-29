@@ -9,17 +9,18 @@
     box-sizing: inherit;
 }
 
-html {
+html, body, #root {
     width: 100%;
-    height: max-content;
+    height: 100vh;
+    /*height: max-content;*/
     box-sizing: border-box;
     /*font-size: 62.5%;*/
     overflow-x: hidden;
 }
 
-body {
-    overflow-x: hidden;
-}
+/*body {*/
+/*    overflow-x: hidden;*/
+/*}*/
 
 /*HEADER*/
 

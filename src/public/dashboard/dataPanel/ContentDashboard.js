@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 
 const ContentDashboard = () => {
   return (
-    <div className="grid-container">
+    <div className="grid-container" >
       <div className="grid-header">Data panel</div>
       <div className="grid-box1">
         <div>
