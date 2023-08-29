@@ -159,7 +159,7 @@ export default function HeaderDashboard() {
   return (
     <Box sx={{flexGrow: 1}}>
       <AppBar
-        position="relative"
+        position="fixed"
         sx={{
           backgroundColor: 'white',
           zIndex: 110,

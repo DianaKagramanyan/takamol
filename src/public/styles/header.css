@@ -892,6 +892,7 @@ section {
     background-color: #F5F7F8;
     width: 100%;
     padding: 40px;
+    margin-top: 50px;
     display: grid;
     grid-template-rows: 40px 70px 1fr;
     grid-template-columns: repeat(3, 1fr);
@@ -941,4 +942,34 @@ section {
     flex-direction: column;
     align-items: center;
     margin-right: 10px;
+}
+
+/*//////////////////////////////////////*/
+/*Services*/
+/*////////////////////////////////////////*/
+.grid-container-cards {
+    display: grid;
+    background-color: #F5F7F8;
+    grid-template-rows: 10px 60px 1fr;
+    /*grid-template-columns: */
+    grid-gap: 30px;
+    padding: 40px;
+    margin-top: 50px;
+
+}
+
+.grid-header {
+
+}
+
+.grid-search {
+    background-color: white;
+    width: 92%;
+    border-radius: 3px;
+    box-shadow: 2px 4px 12px rgba(11, 68, 70, .25);
+}
+
+.display-card {
+    background-color: #F5F7F8;
+    margin-left: -100px;
 }
