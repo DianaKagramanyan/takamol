@@ -60,7 +60,7 @@ export default function ClippedBar() {
                       </ListItemIcon>
 
                       <ListItemText>
-                        <Typography variant="body2" sx={{ fontSize: "14px", marginLeft: "-20px" }}>
+                        <Typography variant="body2" sx={{fontSize: "14px", marginLeft: "-20px"}}>
                           {text}
                         </Typography>
                       </ListItemText>
@@ -92,10 +92,7 @@ export default function ClippedBar() {
           </Box>
         </Box>
       </Drawer>
-
-
       <ContentDashboard/>
-
     </Box>
   );
 }

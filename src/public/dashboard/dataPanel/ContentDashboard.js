@@ -8,6 +8,7 @@ import Diagram from "./Diagram";
 import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined';
 import DoneOutlineOutlinedIcon from '@mui/icons-material/DoneOutlineOutlined';
 import BasicTable from "./Table";
+import Button from "@mui/material/Button";
 
 const ContentDashboard = () => {
   return (
@@ -95,7 +96,7 @@ const ContentDashboard = () => {
           sx={{
             fontFamily: "Roboto, Helvetica, Arial",
             fontSize: '18px',
-            padding: "8px"
+            padding: "8px",
           }}
         >
           Applications analysis
@@ -184,6 +185,19 @@ const ContentDashboard = () => {
         </Box>
         <Divider/>
         <BasicTable/>
+        <Button variant="contained" size="small"
+                sx={{
+                  // fontSize: '6px',
+                  // color: 'white',
+                  // backgroundColor: 'orange',
+                  // borderRadius: '50px',
+                  padding: "8px",
+                  marginTop: "30px",
+                  marginLeft: "20px",
+                  marginBottom: "20px",
+                }}
+
+        >Show all orders</Button>
       </div>
 
     </div>

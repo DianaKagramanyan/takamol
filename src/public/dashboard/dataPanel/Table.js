@@ -42,21 +42,22 @@ export default function BasicTable() {
               key={row.name}
               sx={{'&:last-child td, &:last-child th': {border: 0}}}
             >
-              <TableCell component="th" scope="row" sx={{fontSize: '8px'}}>
+              <TableCell component="th" scope="row" sx={{fontSize: '10px'}}>
                 {row.name}
               </TableCell>
-              <TableCell align="right" sx={{fontSize: '10px'}}>{row.license}</TableCell>
-              <TableCell align="right" sx={{fontSize: '10px'}}>{row.category}</TableCell>
-              <TableCell align="right" sx={{fontSize: '10px'}}>{row.center}</TableCell>
-              <TableCell align="right" sx={{fontSize: '10px'}}>{row.type}</TableCell>
-              <TableCell align="right" sx={{fontSize: '10px'}}>{row.date}</TableCell>
-              <TableCell align="right" sx={{fontSize: '10px'}}>
+              <TableCell align="right" sx={{fontSize: '12px'}}>{row.license}</TableCell>
+              <TableCell align="right" sx={{fontSize: '12px'}}>{row.category}</TableCell>
+              <TableCell align="right" sx={{fontSize: '12px'}}>{row.center}</TableCell>
+              <TableCell align="right" sx={{fontSize: '12px'}}>{row.type}</TableCell>
+              <TableCell align="right" sx={{fontSize: '12px'}}>{row.date}</TableCell>
+              <TableCell align="right" sx={{fontSize: '12px'}}>
                 <Button variant="contained" size="small"
                         sx={{
-                          fontSize: '7px',
+                          fontSize: '6px',
                           color: 'white',
                           backgroundColor: 'orange',
                           borderRadius: '100px',
+                          padding: "8px"
                         }}
 
                 >In progress</Button>
