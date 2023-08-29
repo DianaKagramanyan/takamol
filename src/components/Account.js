@@ -27,7 +27,6 @@ const Account = () => {
       <ClippedBar/>
       <div className="loginPage">
         <p>User Email: {user && user.email}</p>
-
         <button onClick={handleLogout}>
           Logout
         </button>

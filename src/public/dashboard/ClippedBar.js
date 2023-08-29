@@ -55,10 +55,16 @@ export default function ClippedBar() {
                   <ListItem className="list-item" key={text} disablePadding>
                     <ListItemButton>
                       <ListItemIcon>
-                        {index % 2 === 0 ? <DesktopWindowsOutlinedIcon sx={{color: '#3C8084'}}/> :
-                          <HomeOutlinedIcon sx={{color: '#3C8084'}}/>}
+                        {index % 2 === 0 ? <DesktopWindowsOutlinedIcon sx={{color: '#3C8084', fontSize: "22px"}}/> :
+                          <HomeOutlinedIcon sx={{color: '#3C8084', fontSize: "22px"}}/>}
                       </ListItemIcon>
-                      <ListItemText primary={text}/>
+
+                      <ListItemText>
+                        <Typography variant="body2" sx={{ fontSize: "14px", marginLeft: "-20px" }}>
+                          {text}
+                        </Typography>
+                      </ListItemText>
+
                     </ListItemButton>
                   </ListItem>
                 ))}

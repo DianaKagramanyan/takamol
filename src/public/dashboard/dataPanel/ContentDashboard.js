@@ -7,6 +7,7 @@ import {Divider} from "@mui/material";
 import Diagram from "./Diagram";
 import ErrorOutlineOutlinedIcon from '@mui/icons-material/ErrorOutlineOutlined';
 import DoneOutlineOutlinedIcon from '@mui/icons-material/DoneOutlineOutlined';
+import BasicTable from "./Table";
 
 const ContentDashboard = () => {
   return (
@@ -182,6 +183,7 @@ const ContentDashboard = () => {
           Submitted applications
         </Box>
         <Divider/>
+        <BasicTable/>
       </div>
 
     </div>
