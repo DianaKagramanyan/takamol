@@ -893,44 +893,52 @@ section {
     /*margin: 30px auto;*/
     padding: 30px;
     display: grid;
-    grid-template-rows: 40px 100px 400px;
+    grid-template-rows: 40px 70px 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
+
 .grid-header {
     grid-column: 1/-1;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+
 .grid-box1 {
     background-color: white;
     border-radius: 3px;
-    box-shadow: 2px 4px 12px rgba(11,68,70, .25);
-    display:flex;
+    box-shadow: 2px 4px 12px rgba(11, 68, 70, .25);
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-}
-
-.grid-box2 {
-    background-color: white;
-    border-radius: 3px;
-    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
-}
-
-.grid-box3 {
-    background-color: white;
-    border-radius: 3px;
-    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
+    padding: 20px;
 }
 
 .grid-box4 {
     background-color: white;
     border-radius: 3px;
-    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
+    box-shadow: 2px 4px 12px rgba(11, 68, 70, .25)
 }
 
 .grid-box5 {
     background-color: white;
     grid-column: 2/-1;
     border-radius: 3px;
-    box-shadow: 2px 4px 12px rgba(11,68,70, .25)
+    box-shadow: 2px 4px 12px rgba(11, 68, 70, .25)
+}
+
+.make-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-Top: -20px;
+    margin-bottom: 20px;
+}
+
+.small-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
 }
