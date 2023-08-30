@@ -10,6 +10,7 @@ import DoneOutlineOutlinedIcon from '@mui/icons-material/DoneOutlineOutlined';
 import BasicTable from "./Table";
 import Button from "@mui/material/Button";
 
+
 const ContentDashboard = () => {
   return (
     <div className="grid-container" >
@@ -187,10 +188,6 @@ const ContentDashboard = () => {
         <BasicTable/>
         <Button variant="contained" size="small"
                 sx={{
-                  // fontSize: '6px',
-                  // color: 'white',
-                  // backgroundColor: 'orange',
-                  // borderRadius: '50px',
                   padding: "8px",
                   marginTop: "30px",
                   marginLeft: "20px",

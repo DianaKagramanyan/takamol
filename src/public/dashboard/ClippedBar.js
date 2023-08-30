@@ -117,7 +117,7 @@ export default function ClippedBar() {
       {/*  <Toolbar/>*/}
       {/*  <Typography paragraph>*/}
 
-      <ContentDashboard />
+      <ContentDashboard  />
 
       {/*  </Typography>*/}
 

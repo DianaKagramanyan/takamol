@@ -890,7 +890,7 @@ section {
 
 .grid-container {
     background-color: #F5F7F8;
-    width: 100%;
+    /*width: 100%;*/
     padding: 40px;
     margin-top: 50px;
     display: grid;
