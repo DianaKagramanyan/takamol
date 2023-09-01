@@ -14,28 +14,13 @@ import AdbIcon from '@mui/icons-material/Adb';
 import {Link, useLocation} from 'react-router-dom';
 import {logo} from "../../../../img";
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 const pages = ['Main', 'Our Services', 'About', 'Help'];
 
 function ResponsiveAppBar() {
-  //change nav color while scrolling:
-  const [color, setColor] = useState(false);
-  const location = useLocation();
-  const changeColor = () => {
-    // if (location.pathname !== "Main") {
-    //   return;
-    // }
-    if (window.scrollY >= 10) {
-      setColor(true)
-    } else {
-      setColor(false)
-    }
-  }
-  window.addEventListener("scroll", changeColor)
-
-
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const location = useLocation();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -45,8 +30,30 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  return (<AppBar position="static">
-    <Container className={color ? "header header-bg" : "header"} maxWidth="100%">
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (location.pathname === '/Main') {
+        if (window.scrollY >= 10) {
+          setScrolling(false);
+        } else {
+          setScrolling(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [location.pathname]);
+
+  return (<AppBar >
+    <Container
+      className={scrolling ? 'header header-bg' : 'header'}
+      maxWidth="100%">
       <Toolbar disableGutters>
         <Typography
           variant="h6"

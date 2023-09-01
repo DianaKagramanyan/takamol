@@ -28,11 +28,13 @@ html, body, #root {
     position: fixed;
     z-index: 99;
     width: 100%;
+    background-color: white !important;
+    border-bottom: 1px solid lightgray;
 }
 
 .header-bg {
-    background-color: white;
-    border: .5px solid lightgray;
+    background-color: red !important;
+    border-bottom: 1px solid red !important;
 }
 
 .search {
